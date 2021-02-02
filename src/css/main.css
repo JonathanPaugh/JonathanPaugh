@@ -1,0 +1,16 @@
+:root {
+  --color-text: #EEE;
+  --color-background: #333;
+
+  --color-primary: #343;
+  --color-primary-accent: #353;
+
+  --color-secondary: #334;
+  --color-secondary-accent: #335;
+}
+
+html,
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+}
