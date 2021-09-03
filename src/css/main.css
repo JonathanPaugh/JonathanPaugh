@@ -1,16 +1,259 @@
 :root {
   --color-text: #EEE;
   --color-background: #333;
+  --color-background-dark: #222;
 
-  --color-primary: #343;
-  --color-primary-accent: #353;
+  --color-primary: #334;
+  --color-primary-accent: #335;
 
-  --color-secondary: #334;
-  --color-secondary-accent: #335;
+  --color-secondary: #343;
+  --color-secondary-accent: #353;
+
+  --offset-small: 0.5em;
+  --offset-normal: 1em;
+  --offset-large: 2em;
+
+  --font-size-xsmall: 10pt;
+  --font-size-small: 14pt;
+  --font-size-normal: 18pt;
+  --font-size-large: 22pt;
+  --font-size-xlarge: 26pt;
+
+  --font-size-heading-xsmall: 32pt;
+  --font-size-heading-small: 48pt;
+  --font-size-heading-normal: 64pt;
+  --font-size-heading-large: 80pt;
+  --font-size-heading-xlarge: 96pt;
+
+  --font-logo: 'Arima Madurai', cursive;
 }
+
+/***********/
+/* Stylers */
+/***********/
+
+.padding-x-small {
+  padding-left: var(--offset-small);
+  padding-right: var(--offset-small);
+}
+
+.padding-x-normal {
+  padding-left: var(--offset-normal);
+  padding-right: var(--offset-normal);
+}
+
+.padding-x-large {
+  padding-left: var(--offset-large);
+  padding-right: var(--offset-large);
+}
+
+.padding-y-small {
+  padding-bottom: var(--offset-small);
+  padding-top: var(--offset-small);
+}
+
+.padding-y-normal {
+  padding-bottom: var(--offset-normal);
+  padding-top: var(--offset-normal);
+}
+
+.padding-y-large {
+  padding-bottom: var(--offset-large);
+  padding-top: var(--offset-large);
+}
+
+.font-size-xsmall {
+  font-size: var(--font-size-xsmall);
+}
+
+.font-size-small {
+  font-size: var(--font-size-small);
+}
+
+.font-size-normal {
+  font-size: var(--font-size-normal);
+}
+
+.font-size-large {
+  font-size: var(--font-size-large);
+}
+
+.font-size-xlarge {
+  font-size: var(--font-size-xlarge);
+}
+
+.font-size-heading-xsmall {
+  font-size: var(--font-size-heading-xsmall);
+}
+
+.font-size-heading-small {
+  font-size: var(--font-size-heading-small);
+}
+
+.font-size-heading-normal {
+  font-size: var(--font-size-heading-normal);
+}
+
+.font-size-heading-large {
+  font-size: var(--font-size-heading-large);
+}
+
+.font-size-heading-xlarge {
+  font-size: var(--font-size-heading-xlarge);
+}
+
+/*********************/
+/* Element Overrides */
+/*********************/
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: var(--font-size-normal);
+  font-weight: normal;
+}
+
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: var(--font-size-normal);
+  font-weight: normal;
+}
+
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: var(--font-size-normal);
+  font-weight: normal;
+}
+
+h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: var(--font-size-normal);
+  font-weight: normal;
+}
+
+h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: var(--font-size-normal);
+  font-weight: normal;
+}
+
+h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: var(--font-size-normal);
+  font-weight: normal;
+}
+
+ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/**********/
+/* Layout */
+/**********/
 
 html,
 body {
+  margin: 0;
+  min-width: 320px;
   color: var(--color-text);
+  font-size: var(--font-size-normal);
   background: var(--color-background);
+}
+
+header {
+  min-height: 8vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--color-primary);
+}
+
+header > * {
+  padding-left: var(--offset-large);
+  padding-right: var(--offset-large);
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: var(--font-logo);
+}
+
+.header-nav {
+  justify-content: flex-end;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+nav > * {
+  padding-left: var(--offset-large);
+  text-align: right;
+}
+
+.section-splash > img {
+  width: 100%;
+  height: auto;
+}
+
+.section-about {
+  text-align: center;
+}
+
+.section-project {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  text-align: center;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10vh;
+}
+
+.project-item {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  white-space: nowrap;
+}
+
+.project-item > img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  margin-top: 10vh;
+  min-height: 12vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--color-background-dark);
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+  }
 }
