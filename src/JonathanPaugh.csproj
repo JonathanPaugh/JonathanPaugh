@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<OutputType>Exe</OutputType>
+		<DebugType>portable</DebugType>
+		<SelfContained>true</SelfContained>
+		<PublishTrimmed>false</PublishTrimmed>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<StartupObject>JonathanPaugh.Program</StartupObject>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+		<PublishSingleFile>true</PublishSingleFile>
+		<DefineConstants>TRACE</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="public\**">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\JapeCore\JapeCore\JapeCore.csproj" />
+		<ProjectReference Include="..\JapeCore\JapeDatabase\JapeDatabase.csproj" />
+		<ProjectReference Include="..\JapeCore\JapeHttp\JapeHttp.csproj" />
+		<ProjectReference Include="..\JapeCore\JapeService\JapeService.csproj" />
+		<ProjectReference Include="..\JapeCore\JapeWeb\JapeWeb.csproj" />
+	</ItemGroup>
+
+</Project>
