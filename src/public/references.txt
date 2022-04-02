@@ -1,0 +1,3 @@
+Icons8
+Animate.css
+fonts.google
