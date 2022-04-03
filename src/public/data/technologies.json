@@ -1,0 +1,17 @@
+{
+  "Html": "html-mono.svg",
+  "Javascript": "javascript-mono.svg",
+  "Css": "css-mono.svg",
+  "Node.js": "node-mono.svg",
+  "Git": "git-mono.svg",
+  "C": "c-mono.svg",
+  "C#": "csharp-mono.svg",
+  "Java": "java-mono.svg",
+  "Python": "python-mono.svg",
+  "Unity": "unity-mono.svg",
+  "MySQL": "mysql-mono.svg",
+  "MongoDB": "mongo-mono.svg",
+  "Firebase": "firebase-mono.svg",
+  "Redis": "redis-mono.svg",
+  "Figma": "figma-mono.svg"
+}
