@@ -1,0 +1,19 @@
+<div class="project-item">
+    <a class="project-item-link">
+        <div class="project-item-header">
+            <div>
+                <div class="project-item-heading"></div>
+                <div class="project-item-title"></div>
+                <div>
+                    <span class="project-item-type"></span>
+                    <span class="project-item-year"></span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item-preview"></div>
+    </a>
+    <div class="project-item-footer">
+        <button class="project-item-button-info">Read More</button>
+        <button class="project-item-button-view">View Source Code</button>
+    </div>
+</div>

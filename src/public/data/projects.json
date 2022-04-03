@@ -1,0 +1,135 @@
+{
+  "Octagonal Adventure": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "24-Hour Grapple Platformer",
+    "type": "BC Hacks 2.0",
+    "year": "2021",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "Html Stacking Game": {
+    "url": "./portfolio/stack/stack.html",
+    "title": "Personal Project",
+    "type": "Personal Project",
+    "year": "2019",
+    "preview": "./img/stack.png",
+    "view": "./portfolio/stack/stack.html",
+    "info": {}
+  },
+  "Trackerly": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "Winter Hacks",
+    "type": "Personal Project",
+    "year": "2021",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "Limb Man": {
+    "url": "https://jape.games/LimbMan",
+    "title": "Physics Based Rage Platformer",
+    "type": "Personal Project",
+    "year": "2021 - Current",
+    "preview": "./img/limb-man.gif",
+    "view": "https://github.com/JonathanPaugh/LimbMan",
+    "info": {}
+  },
+  "Cube Supercube": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "WebGL Dedicated Multiplayer Test Game",
+    "type": "Personal Project",
+    "year": "2021",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "Jape Core": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "Personal C# Module Library",
+    "type": "Personal Project",
+    "year": "2021",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "C# Web Server": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "Backend Web Server System",
+    "type": "Personal Project",
+    "year": "2021",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "Unity Framework": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "Tools To Improve Production Flow",
+    "type": "Personal Project",
+    "year": "2020 - Current",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "Unity Framework Services": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "External Tools For Unity Framework",
+    "type": "Personal Project",
+    "year": "2019++",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "Crossdle": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "Unity Framework To Improve Production Flow",
+    "year": "2019++",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "GreenSpace": {
+    "url": "http://green-space.us-west-1.elasticbeanstalk.com/",
+    "title": "School Project",
+    "year": "2019++",
+    "preview": "./img/green-space.png",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "Covaware": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "Unity Framework To Improve Production Flow",
+    "sub": "School Project",
+    "year": "2019++",
+    "preview": "./img/covaware.png",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "Delivery Company Website": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "Unity Framework To Improve Production Flow",
+    "sub": "School Project",
+    "year": "2019++",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "Transcender": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "Unity Framework To Improve Production Flow",
+    "sub": "School Project",
+    "year": "2018",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  },
+  "2D Fighter Prototype": {
+    "url": "https://devpost.com/software/octagonal-adventure",
+    "title": "Unity Framework To Improve Production Flow",
+    "sub": "School Project",
+    "year": "2018",
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "info": {}
+  }
+}

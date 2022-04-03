@@ -1,3 +1,6 @@
 [submodule "JapeCore"]
 	path = JapeCore
 	url = https://github.com/JonathanPaugh/JapeCore.git
+[submodule "src/public/portfolio/stack2"]
+	path = src/public/portfolio/stack2
+	url = https://github.com/JonathanPaugh/StackHtml.git
