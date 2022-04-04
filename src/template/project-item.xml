@@ -9,6 +9,7 @@
                     <span class="project-item-year"></span>
                 </div>
             </div>
+            <div class="project-item-badges"></div>
         </div>
         <div class="project-item-preview"></div>
     </a>

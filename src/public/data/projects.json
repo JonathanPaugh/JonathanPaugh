@@ -4,6 +4,7 @@
     "title": "24-Hour Grapple Platformer",
     "type": "BC Hacks 2.0",
     "year": "2021",
+    "badges": [ "Unity", "C#" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
     "view": "https://github.com/JonathanPaugh/octagonal-adventure",
     "info": {}
@@ -13,6 +14,7 @@
     "title": "Personal Project",
     "type": "Personal Project",
     "year": "2019",
+    "badges": [ "Html", "Css", "Javascript" ],
     "preview": "./img/stack.png",
     "view": "./portfolio/stack/stack.html",
     "info": {}
@@ -22,6 +24,7 @@
     "title": "Winter Hacks",
     "type": "Personal Project",
     "year": "2021",
+    "badges": [ "Html", "Css", "Figma" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
     "view": "https://github.com/JonathanPaugh/octagonal-adventure",
     "info": {}
@@ -31,13 +34,14 @@
     "title": "Physics Based Rage Platformer",
     "type": "Personal Project",
     "year": "2021 - Current",
+    "badges": [ "Unity", "C#" ],
     "preview": "./img/limb-man.gif",
     "view": "https://github.com/JonathanPaugh/LimbMan",
     "info": {}
   },
   "Cube Supercube": {
     "url": "https://devpost.com/software/octagonal-adventure",
-    "title": "WebGL Dedicated Multiplayer Test Game",
+    "title": "WebGL Multiplayer Dedicated Server Test Game",
     "type": "Personal Project",
     "year": "2021",
     "preview": "https://dummyimage.com/600x300/000/fff",

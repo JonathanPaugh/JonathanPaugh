@@ -13,13 +13,15 @@ $(() => {
 async function createProjectItems() {
     let data = await fetchFileAsync("./JonathanPaugh/src/public/data/projects.json");
     let template = await fetchFileAsync("./JonathanPaugh/src/template/project-item.xml");
+    let technologies = await fetchFileAsync("./JonathanPaugh/src/public/data/technologies.json")
     projects = JSON.parse(data);
+    technologies = JSON.parse(technologies)
     for (let [heading, project] of Object.entries(projects)) {
-        await createProjectItem(heading, project, template);
+        await createProjectItem(heading, project, template, technologies);
     }
 }
 
-async function createProjectItem(heading, project, template) {
+async function createProjectItem(heading, project, template, technologies) {
     template = $(template).appendTo(".project-container");
     template.find(".project-item-link").attr("href", project.url);
 
@@ -27,6 +29,15 @@ async function createProjectItem(heading, project, template) {
     template.find(".project-item-title").html(project.title);
     template.find(".project-item-type").html(`${project.type}, `);
     template.find(".project-item-year").html(project.year);
+
+    if (project.badges) {
+        project.badges.forEach(async badge => {
+            let data = await fetchFileAsync(`./JonathanPaugh/src/public/svg/technologies/${technologies[badge][0]}`);
+            icon = $(data).appendTo(template.find(".project-item-badges"));
+            icon.addClass("no-hover");
+        });
+    }
+
 
     preview = createElement("img");
     preview.attr("src", project.preview);
@@ -53,8 +64,8 @@ async function createSocialIcon(file, url) {
 async function createTechnologyIcons() {
     let data = await fetchFileAsync("./JonathanPaugh/src/public/data/technologies.json");
     technologies = JSON.parse(data);
-    for (let [name, file] of Object.entries(technologies)) {
-        await createTechnologyIcon(name, file);
+    for (let [name, files] of Object.entries(technologies)) {
+        await createTechnologyIcon(name, files[1]);
     }
 }
 
