@@ -2,31 +2,42 @@
   "Octagonal Adventure": {
     "url": "https://devpost.com/software/octagonal-adventure",
     "title": "24-Hour Grapple Platformer",
-    "type": "BC Hacks 2.0",
+    "sub": "BC Hacks 2.0",
+    "type": "Hackathon Project",
     "year": "2021",
     "badges": [ "Unity", "C#" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/octagonal-adventure" ],
+      [ "View Hackathon Entry", "https://devpost.com/software/octagonal-adventure" ]
+    ],
     "info": {}
   },
   "Html Stacking Game": {
     "url": "./portfolio/stack/stack.html",
-    "title": "Personal Project",
+    "title": "Stacking Game Using Html Elements",
     "type": "Personal Project",
     "year": "2019",
     "badges": [ "Html", "Css", "Javascript" ],
     "preview": "./img/stack.png",
-    "view": "./portfolio/stack/stack.html",
+    "buttons": [
+      [ "View Live Demo", "./portfolio/stack/stack.html" ],
+      [ "View Source Code", "https://github.com/JonathanPaugh/StackHtml" ]
+    ],
     "info": {}
   },
   "Trackerly": {
-    "url": "https://devpost.com/software/octagonal-adventure",
+    "url": "https://github.com/JonathanPaugh/Trackerly",
     "title": "Winter Hacks",
-    "type": "Personal Project",
+    "sub": "Winter Hacks",
+    "type": "Hackathon Project",
     "year": "2021",
     "badges": [ "Html", "Css", "Figma" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "buttons": [
+      [ "View Wireframe Prototype", "./portfolio/stack/stack.html" ],
+      [ "View Landing Page", "https://jonathanpaugh.github.io/Trackerly" ]
+    ],
     "info": {}
   },
   "Limb Man": {
@@ -36,104 +47,147 @@
     "year": "2021 - Current",
     "badges": [ "Unity", "C#" ],
     "preview": "./img/limb-man.gif",
-    "view": "https://github.com/JonathanPaugh/LimbMan",
+    "buttons": [
+      [ "Play Demo", "https://jape.games/LimbMan" ],
+      [ "View Source Code", "https://github.com/JonathanPaugh/LimbMan" ]
+    ],
     "info": {}
   },
   "Cube Supercube": {
-    "url": "https://devpost.com/software/octagonal-adventure",
+    "url": "https://jape.games/CubeSuperCube",
     "title": "WebGL Multiplayer Dedicated Server Test Game",
     "type": "Personal Project",
     "year": "2021",
+    "badges": [ "Unity", "C#", "Digital Ocean" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
-    "info": {}
+    "buttons": [
+      [ "Play Prototype", "https://jape.games/CubeSuperCube" ],
+      [ "View Source Code", "https://github.com/JonathanPaugh/Cube-Supercube" ]
+    ],
+    "info": {},
+    "hidden": true
   },
   "Jape Core": {
-    "url": "https://devpost.com/software/octagonal-adventure",
+    "url": "https://github.com/JonathanPaugh/JapeCore",
     "title": "Personal C# Module Library",
     "type": "Personal Project",
     "year": "2021",
+    "badges": [ "C#" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
-    "info": {}
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/JapeCore" ]
+    ],
+    "info": {},
+    "hidden": true
   },
   "C# Web Server": {
-    "url": "https://devpost.com/software/octagonal-adventure",
+    "url": "https://github.com/JonathanPaugh/CSharpWebServer",
     "title": "Backend Web Server System",
     "type": "Personal Project",
     "year": "2021",
+    "badges": [ "C#", "MySQL", "MongoDB", "Redis" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/CSharpWebServer" ]
+    ],
     "info": {}
   },
   "Unity Framework": {
-    "url": "https://devpost.com/software/octagonal-adventure",
+    "url": "https://github.com/JonathanPaugh/JapetheapeFramework",
     "title": "Tools To Improve Production Flow",
     "type": "Personal Project",
     "year": "2020 - Current",
+    "badges": [ "C#", "Unity", "Html", "Css", "Javascript" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
-    "info": {}
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/JapetheapeFramework" ]
+    ],
+    "info": {},
+    "hidden": true
   },
   "Unity Framework Services": {
-    "url": "https://devpost.com/software/octagonal-adventure",
+    "url": "https://github.com/JonathanPaugh/JapetheapeFrameworkServices",
     "title": "External Tools For Unity Framework",
     "type": "Personal Project",
     "year": "2019++",
+    "badges": [ "C#", "Digital Ocean", "MongoDB", "Redis" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
-    "info": {}
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/JapetheapeFrameworkServices" ]
+    ],
+    "info": {},
+    "hidden": true
   },
   "Crossdle": {
-    "url": "https://devpost.com/software/octagonal-adventure",
-    "title": "Unity Framework To Improve Production Flow",
+    "url": "https://github.com/JonathanPaugh/Crossdle",
+    "title": "Fusion Word Game",
     "year": "2019++",
+    "badges": [ "Java", "Firebase" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/Crossdle" ]
+    ],
     "info": {}
   },
   "GreenSpace": {
-    "url": "http://green-space.us-west-1.elasticbeanstalk.com/",
+    "url": "http://green-space.us-west-1.elasticbeanstalk.com",
     "title": "School Project",
     "year": "2019++",
+    "badges": [ "Html", "Css", "Javascript", "Node.js", "Firebase", "AWS" ],
     "preview": "./img/green-space.png",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/COMP-2800-Team-BBY-23-GreenSpace" ],
+      [ "View Live Demo", "http://green-space.us-west-1.elasticbeanstalk.com/" ]
+    ],
     "info": {}
   },
   "Covaware": {
-    "url": "https://devpost.com/software/octagonal-adventure",
+    "url": "https://github.com/JonathanPaugh/Comp1800-Team25",
     "title": "Unity Framework To Improve Production Flow",
     "sub": "School Project",
     "year": "2019++",
+    "badges": [ "Html", "Css", "Javascript", "Firebase" ],
     "preview": "./img/covaware.png",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
-    "info": {}
-  },
-  "Delivery Company Website": {
-    "url": "https://devpost.com/software/octagonal-adventure",
-    "title": "Unity Framework To Improve Production Flow",
-    "sub": "School Project",
-    "year": "2019++",
-    "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/Comp1800-Team25" ]
+    ],
     "info": {}
   },
   "Transcender": {
-    "url": "https://devpost.com/software/octagonal-adventure",
+    "url": "",
     "title": "Unity Framework To Improve Production Flow",
     "sub": "School Project",
     "year": "2018",
+    "badges": [ "Unity", "C#" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
-    "info": {}
+    "buttons": [],
+    "info": {},
+    "hidden": true
   },
   "2D Fighter Prototype": {
-    "url": "https://devpost.com/software/octagonal-adventure",
+    "url": "https://github.com/JonathanPaugh/Game",
     "title": "Unity Framework To Improve Production Flow",
     "sub": "School Project",
     "year": "2018",
+    "badges": [ "Unity", "C#" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
-    "view": "https://github.com/JonathanPaugh/octagonal-adventure",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/Game" ]
+    ],
+    "info": {},
+    "hidden": true
+  },
+  "Abalone AI Sandbox": {
+    "url": "https://github.com/JonathanPaugh/COMP3981-Team4",
+    "title": "Minimax Game Playing Agent",
+    "sub": "School Project",
+    "year": "2022",
+    "badges": [ "Python" ],
+    "preview": "https://dummyimage.com/600x300/000/fff",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/COMP3981-Team4" ],
+      [ "Download Latest Release", "https://github.com/JonathanPaugh/COMP3981-Team4/releases" ]
+    ],
     "info": {}
   }
 }

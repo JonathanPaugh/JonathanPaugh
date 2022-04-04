@@ -8,8 +8,6 @@ $(() => {
     updateFooterYear();
 });
 
-
-
 async function createProjectItems() {
     let data = await fetchFileAsync("./JonathanPaugh/src/public/data/projects.json");
     let template = await fetchFileAsync("./JonathanPaugh/src/template/project-item.xml");
@@ -17,6 +15,7 @@ async function createProjectItems() {
     projects = JSON.parse(data);
     technologies = JSON.parse(technologies)
     for (let [heading, project] of Object.entries(projects)) {
+        if (project.hidden) { continue; }
         await createProjectItem(heading, project, template, technologies);
     }
 }
@@ -38,11 +37,21 @@ async function createProjectItem(heading, project, template, technologies) {
         });
     }
 
-
     preview = createElement("img");
     preview.attr("src", project.preview);
 
     template.find(".project-item-preview").append(preview);
+
+    if (project.buttons) {
+        for (let [text, url] of project.buttons) {
+            let link = createElement("a");
+            link.attr("href", url);
+            template.find(".project-item-footer").append(link);
+            element = createElement("button")
+            element.html(text);
+            link.append(element);
+        }
+    }
 }
 
 async function createSocialIcons() {

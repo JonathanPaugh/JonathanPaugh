@@ -13,8 +13,5 @@
         </div>
         <div class="project-item-preview"></div>
     </a>
-    <div class="project-item-footer">
-        <button class="project-item-button-info">Read More</button>
-        <button class="project-item-button-view">View Source Code</button>
-    </div>
+    <div class="project-item-footer"></div>
 </div>
