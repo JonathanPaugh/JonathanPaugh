@@ -207,7 +207,7 @@ a svg:hover:not(.no-hover) {
 
 button {
   font-size: var(--font-size-large);
-  border: 3px solid;
+  border: 2px solid;
   border-color: var(--color-text);
   border-radius: 6px;
   background-color: transparent;
@@ -294,13 +294,17 @@ header > * {
   align-items: center;
 }
 
+header.scrolled {
+  background-color: var(--color-background);
+}
+
 .header-nav {
   justify-content: flex-end;
 }
 
 nav {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav > * {
@@ -357,7 +361,7 @@ nav > * {
 }
 
 .splash-icons svg:hover {
-  fill: var(--color-secondary);
+  fill: var(--color-secondary)!important;
 }
 
 .splash-icons a:nth-child(1) { animation: 1.5s fadeIn; animation-delay: 0.75s; animation-fill-mode: backwards; }
@@ -426,8 +430,11 @@ nav > * {
 
 .project-item-preview > img {
   width: 100%;
+  max-width: 600px;
   max-height: 300px;
   object-fit: cover;
+  border: 1px solid white;
+  border-radius: 6px;
 }
 
 .project-item-footer {
@@ -454,7 +461,6 @@ nav > * {
 
 .transition {
   margin-bottom: -6px;
-  background-color: var(--color-background-light);
 }
 
 .transition > svg {

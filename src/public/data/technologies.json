@@ -1,7 +1,7 @@
 {
   "Html": [ "html.svg", "html-mono.svg" ],
-  "Javascript": [ "javascript.svg", "javascript-mono.svg" ],
   "Css": [ "css.svg", "css-mono.svg" ],
+  "Javascript": [ "javascript.svg", "javascript-mono.svg" ],
   "Node.js": [ "node.svg", "node-mono.svg" ],
   "Git": [ "git.svg", "git-mono.svg" ],
   "C": [ "c.svg", "c-mono.svg" ],

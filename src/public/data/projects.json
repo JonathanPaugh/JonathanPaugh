@@ -6,16 +6,16 @@
     "type": "Hackathon Project",
     "year": "2021",
     "badges": [ "Unity", "C#" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
+    "preview": "./img/octagon.png",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/octagonal-adventure" ],
       [ "View Hackathon", "https://devpost.com/software/octagonal-adventure" ]
     ],
     "info": {}
   },
-  "Html Stacking Game": {
+  "Stack": {
     "url": "./portfolio/stack/stack.html",
-    "title": "Stacking Game Using Html Elements",
+    "title": "Html Element Stacking Game",
     "type": "Personal Project",
     "year": "2019",
     "badges": [ "Html", "Css", "Javascript" ],
@@ -33,9 +33,9 @@
     "type": "Hackathon Project",
     "year": "2021",
     "badges": [ "Html", "Css", "Figma" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
+    "preview": "./img/trackerly.png",
     "buttons": [
-      [ "View Landing Page", "https://jonathanpaugh.github.io/Trackerly" ],
+      [ "View Website", "https://jonathanpaugh.github.io/Trackerly" ],
       [ "View Wireframe", "https://www.figma.com/proto/ObkqWEedLct3RURvIFgDRP/Home-Page?node-id=4%3A3&scaling=scale-down" ],
       [ "View Hackathon", "https://devpost.com/software/trackerly" ]
     ],
@@ -56,7 +56,7 @@
   },
   "Cube Supercube": {
     "url": "https://jape.games/CubeSuperCube",
-    "title": "WebGL Multiplayer Dedicated Server Test Project",
+    "title": "WebGL Multiplayer Game Using Dedicated Servers",
     "type": "Personal Project",
     "year": "2020 - 2021",
     "badges": [ "Unity", "C#", "Digital Ocean" ],
@@ -88,7 +88,7 @@
     "type": "Personal Project",
     "year": "2021 - Current",
     "badges": [ "C#", "MySQL", "MongoDB", "Redis" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
+    "preview": "./img/csharp-webserver.png",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/CSharpWebServer" ]
     ],
@@ -123,9 +123,10 @@
   "Crossdle": {
     "url": "https://github.com/JonathanPaugh/Crossdle",
     "title": "Fusion Word Game",
-    "year": "2019++",
+    "type": "School Project",
+    "year": "2022",
     "badges": [ "Java", "Firebase" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
+    "preview": "./img/crossdle.png",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/Crossdle" ]
     ],
@@ -133,8 +134,9 @@
   },
   "GreenSpace": {
     "url": "http://green-space.us-west-1.elasticbeanstalk.com",
-    "title": "School Project",
-    "year": "2019++",
+    "title": "Community Garden Web App",
+    "type": "School Project",
+    "year": "2021",
     "badges": [ "Html", "Css", "Javascript", "Node.js", "Firebase", "AWS" ],
     "preview": "./img/green-space.png",
     "buttons": [
@@ -145,9 +147,9 @@
   },
   "Covaware": {
     "url": "https://github.com/JonathanPaugh/Comp1800-Team25",
-    "title": "Unity Framework To Improve Production Flow",
-    "sub": "School Project",
-    "year": "2019++",
+    "title": "Covid Review Web App",
+    "type": "School Project",
+    "year": "2021",
     "badges": [ "Html", "Css", "Javascript", "Firebase" ],
     "preview": "./img/covaware.png",
     "buttons": [
@@ -185,7 +187,7 @@
     "sub": "School Project",
     "year": "2022",
     "badges": [ "Python" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
+    "preview": "./img/abalone.gif",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/COMP3981-Team4" ],
       [ "Download Latest Release", "https://github.com/JonathanPaugh/COMP3981-Team4/releases" ]

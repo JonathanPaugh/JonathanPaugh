@@ -1,12 +1,26 @@
 cachedIcons = {};
 
 $(() => {
+    scrollHeader();
     createSocialIcons();
     createTechnologyIcons();
     createProjectItems();
     createFooterTransition();
     updateFooterYear();
 });
+
+function scrollHeader() {
+    var anchor_offset = $('a[href="#SECTION_ABOUT"]').offset().top;
+
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop() > anchor_offset) {
+            $("header").addClass("scrolled");
+        }
+        else {
+            $("header").removeClass("scrolled");
+        }
+    });
+}
 
 async function createProjectItems() {
     let data = await fetchFileAsync("./JonathanPaugh/src/public/data/projects.json");
