@@ -9,7 +9,7 @@
     "preview": "https://dummyimage.com/600x300/000/fff",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/octagonal-adventure" ],
-      [ "View Hackathon Entry", "https://devpost.com/software/octagonal-adventure" ]
+      [ "View Hackathon", "https://devpost.com/software/octagonal-adventure" ]
     ],
     "info": {}
   },
@@ -35,8 +35,9 @@
     "badges": [ "Html", "Css", "Figma" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
     "buttons": [
-      [ "View Wireframe Prototype", "./portfolio/stack/stack.html" ],
-      [ "View Landing Page", "https://jonathanpaugh.github.io/Trackerly" ]
+      [ "View Landing Page", "https://jonathanpaugh.github.io/Trackerly" ],
+      [ "View Wireframe", "https://www.figma.com/proto/ObkqWEedLct3RURvIFgDRP/Home-Page?node-id=4%3A3&scaling=scale-down" ],
+      [ "View Hackathon", "https://devpost.com/software/trackerly" ]
     ],
     "info": {}
   },
@@ -55,9 +56,9 @@
   },
   "Cube Supercube": {
     "url": "https://jape.games/CubeSuperCube",
-    "title": "WebGL Multiplayer Dedicated Server Test Game",
+    "title": "WebGL Multiplayer Dedicated Server Test Project",
     "type": "Personal Project",
-    "year": "2021",
+    "year": "2020 - 2021",
     "badges": [ "Unity", "C#", "Digital Ocean" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
     "buttons": [
@@ -71,7 +72,7 @@
     "url": "https://github.com/JonathanPaugh/JapeCore",
     "title": "Personal C# Module Library",
     "type": "Personal Project",
-    "year": "2021",
+    "year": "2021 - Current",
     "badges": [ "C#" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
     "buttons": [
@@ -83,8 +84,9 @@
   "C# Web Server": {
     "url": "https://github.com/JonathanPaugh/CSharpWebServer",
     "title": "Backend Web Server System",
+    "sub": "Currently Running This Website",
     "type": "Personal Project",
-    "year": "2021",
+    "year": "2021 - Current",
     "badges": [ "C#", "MySQL", "MongoDB", "Redis" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
     "buttons": [

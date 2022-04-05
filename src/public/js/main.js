@@ -12,11 +12,9 @@ async function createProjectItems() {
     let data = await fetchFileAsync("./JonathanPaugh/src/public/data/projects.json");
     let template = await fetchFileAsync("./JonathanPaugh/src/template/project-item.xml");
     let technologies = await fetchFileAsync("./JonathanPaugh/src/public/data/technologies.json")
-    projects = JSON.parse(data);
-    technologies = JSON.parse(technologies)
-    for (let [heading, project] of Object.entries(projects)) {
+    for (let [heading, project] of Object.entries(JSON.parse(data))) {
         if (project.hidden) { continue; }
-        await createProjectItem(heading, project, template, technologies);
+        await createProjectItem(heading, project, template, JSON.parse(technologies));
     }
 }
 
@@ -27,17 +25,17 @@ async function createProjectItem(heading, project, template, technologies) {
     template.find(".project-item-heading").html(heading);
     template.find(".project-item-title").html(project.title);
     template.find(".project-item-type").html(`${project.type}, `);
-    template.find(".project-item-year").html(project.year);
+    template.find(".project-item-year").html(project.year.replace("-", "\uD83E\uDC62"));
 
     if (project.badges) {
-        project.badges.forEach(async badge => {
+        for (badge of project.badges) {
             let data = await fetchFileAsync(`./JonathanPaugh/src/public/svg/technologies/${technologies[badge][0]}`);
-            icon = $(data).appendTo(template.find(".project-item-badges"));
+            let icon = $(data).appendTo(template.find(".project-item-badges"));
             icon.addClass("no-hover");
-        });
+        }
     }
 
-    preview = createElement("img");
+    let preview = createElement("img");
     preview.attr("src", project.preview);
 
     template.find(".project-item-preview").append(preview);
@@ -56,7 +54,7 @@ async function createProjectItem(heading, project, template, technologies) {
 
 async function createSocialIcons() {
     let data = await fetchFileAsync("./JonathanPaugh/src/public/data/socials.json");
-    socials = JSON.parse(data);
+    let socials = JSON.parse(data);
     for (let [file, url] of Object.values(socials)) {
         await createSocialIcon(file, url);
     }
@@ -72,7 +70,7 @@ async function createSocialIcon(file, url) {
 
 async function createTechnologyIcons() {
     let data = await fetchFileAsync("./JonathanPaugh/src/public/data/technologies.json");
-    technologies = JSON.parse(data);
+    let technologies = JSON.parse(data);
     for (let [name, files] of Object.entries(technologies)) {
         await createTechnologyIcon(name, files[1]);
     }
