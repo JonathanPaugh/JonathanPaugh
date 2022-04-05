@@ -23,9 +23,9 @@ function scrollHeader() {
 }
 
 async function createProjectItems() {
-    let data = await fetchFileAsync("./JonathanPaugh/src/public/data/projects.json");
-    let template = await fetchFileAsync("./JonathanPaugh/src/template/project-item.xml");
-    let technologies = await fetchFileAsync("./JonathanPaugh/src/public/data/technologies.json")
+    let data = await fetchFileAsync("./data/projects.json");
+    let template = await fetchFileAsync("./template/project-item.xml");
+    let technologies = await fetchFileAsync("./data/technologies.json")
     for (let [heading, project] of Object.entries(JSON.parse(data))) {
         if (project.hidden) { continue; }
         await createProjectItem(heading, project, template, JSON.parse(technologies));
@@ -43,7 +43,7 @@ async function createProjectItem(heading, project, template, technologies) {
 
     if (project.badges) {
         for (badge of project.badges) {
-            let data = await fetchFileAsync(`./JonathanPaugh/src/public/svg/technologies/${technologies[badge][0]}`);
+            let data = await fetchFileAsync(`./svg/technologies/${technologies[badge][0]}`);
             let icon = $(data).appendTo(template.find(".project-item-badges"));
             icon.addClass("no-hover");
         }
@@ -67,7 +67,7 @@ async function createProjectItem(heading, project, template, technologies) {
 }
 
 async function createSocialIcons() {
-    let data = await fetchFileAsync("./JonathanPaugh/src/public/data/socials.json");
+    let data = await fetchFileAsync("./data/socials.json");
     let socials = JSON.parse(data);
     for (let [file, url] of Object.values(socials)) {
         await createSocialIcon(file, url);
@@ -75,7 +75,7 @@ async function createSocialIcons() {
 }
 
 async function createSocialIcon(file, url) {
-    let data = await fetchFileAsync(`./JonathanPaugh/src/public/svg/socials/${file}`);
+    let data = await fetchFileAsync(`./svg/socials/${file}`);
     let link = createElement("a");
     link.attr("href", url);
     $(".splash-icons").append(link);
@@ -83,7 +83,7 @@ async function createSocialIcon(file, url) {
 }
 
 async function createTechnologyIcons() {
-    let data = await fetchFileAsync("./JonathanPaugh/src/public/data/technologies.json");
+    let data = await fetchFileAsync("./data/technologies.json");
     let technologies = JSON.parse(data);
     for (let [name, files] of Object.entries(technologies)) {
         await createTechnologyIcon(name, files[1]);
@@ -91,7 +91,7 @@ async function createTechnologyIcons() {
 }
 
 async function createTechnologyIcon(name, file) {
-    let data = await fetchFileAsync(`./JonathanPaugh/src/public/svg/technologies/${file}`);
+    let data = await fetchFileAsync(`./svg/technologies/${file}`);
 
     let container = createDiv();
     $(".about-technologies-container").append(container);
@@ -117,7 +117,7 @@ async function createTechnologyIcon(name, file) {
 }
 
 function createFooterTransition() {
-    fetchFile("./JonathanPaugh/src/public/svg/transition.svg", (data) => {
+    fetchFile("./svg/transition.svg", (data) => {
         $(".transition").append(data);
     });
 }
