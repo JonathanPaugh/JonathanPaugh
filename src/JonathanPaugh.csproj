@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
@@ -22,9 +22,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Watch Include="public\**" />
 		<Content Include="public\**">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
+		<Watch Include="template\**" />
 		<Content Include="template\**">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
@@ -37,5 +39,4 @@
 		<ProjectReference Include="..\JapeCore\JapeService\JapeService.csproj" />
 		<ProjectReference Include="..\JapeCore\JapeWeb\JapeWeb.csproj" />
 	</ItemGroup>
-
 </Project>

@@ -11,6 +11,10 @@ namespace JonathanPaugh
     {
         private Templater templates;
 
+        #if DEBUG
+        protected override bool Caching => false;
+        #endif
+
         public WebServer(int http, int https) : base(http, https) {} 
         
         protected override IEnumerator<WebComponent> Components() {
