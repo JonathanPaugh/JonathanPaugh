@@ -184,7 +184,7 @@
   "Abalone AI Sandbox": {
     "url": "https://github.com/JonathanPaugh/COMP3981-Team4",
     "title": "Minimax Game Playing Agent",
-    "sub": "School Project",
+    "type": "School Project",
     "year": "2022",
     "badges": [ "Python" ],
     "preview": "./img/abalone.gif",
