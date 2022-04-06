@@ -21,11 +21,6 @@ namespace JonathanPaugh
 
         private async Task<Middleware.Result> ResponseTemplate(Middleware.Request request, PathString requestPath)
         {
-            if (request.GetMethod() == Request.Method.Get)
-            {
-                Log.Write($"Template Get Request: {requestPath}");
-            }
-
             request.Path.StartsWithSegments(requestPath, out PathString remainingPath);
             string file = await templates.ReadFileAsync($".{remainingPath}");
             return await request.Complete(Status.SuccessCode.Ok, file);
