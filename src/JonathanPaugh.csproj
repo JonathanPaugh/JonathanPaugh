@@ -33,6 +33,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\JapeCore\JapeCore\JapeCore.csproj" />
 		<ProjectReference Include="..\JapeCore\JapeDatabase\JapeDatabase.csproj" />
 		<ProjectReference Include="..\JapeCore\JapeHttp\JapeHttp.csproj" />

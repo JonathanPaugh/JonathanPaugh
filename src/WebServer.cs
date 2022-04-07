@@ -11,6 +11,8 @@ namespace JonathanPaugh
     {
         private Templater templates;
 
+        private const bool DEBUG = true;
+
         #if DEBUG
         protected override bool Caching => false;
         #endif
@@ -21,6 +23,22 @@ namespace JonathanPaugh
             templates = CreateTemplater("./template");
             PathString templatesRequestPath = "/template"; 
             yield return Route(templatesRequestPath, "./template", async request => await ResponseTemplate(request, templatesRequestPath));
+
+            if (DEBUG)
+            {
+                yield return UseAsync(ResponseConstantsDebug);
+            }
+        }
+
+        private async Task<Middleware.Result> ResponseConstantsDebug(Middleware.Request request)
+        {
+            if (request.Path.Value.Contains("constants.js"))
+            {
+                string data = await ReadStaticFileAsync("js/constants.js");
+                return await request.Complete(Status.SuccessCode.Ok, data.Replace("false", "true"));
+            }
+
+            return request.Next();
         }
 
         private async Task<Middleware.Result> ResponseTemplate(Middleware.Request request, PathString requestPath)

@@ -1,18 +1,45 @@
 cachedIcons = {};
 
-$(() => {
-    scrollHeader();
-    createSocialIcons();
-    createTechnologyIcons();
-    createProjectItems();
-    createFooterTransition();
-    updateFooterYear();
-});
+$(setupPage);
 
-function scrollHeader() {
-    var anchor_offset = $('a[href="#SECTION_ABOUT"]').offset().top;
+function onBuilt() {
+    injectScrollPosition();
+}
 
-    $(window).on("scroll", function() {
+function setupPage() {
+    setupHeaderScroll();
+    setupFooterYear();
+    buildPage();
+}
+
+async function buildPage() {
+    let setup = [
+        createSocialIcons(),
+        createTechnologyIcons(),
+        createProjectItems(),
+        createFooterTransition()
+    ];
+
+    await Promise.all(setup);
+
+    onBuilt();
+}
+
+function injectScrollPosition() {
+    if (DEBUG !== true) { return; }
+    $(window).on( "unload", () => {
+        let scrollPosition = $(window).scrollTop();
+        localStorage.setItem("scrollPosition", scrollPosition);
+    });
+    if (localStorage.scrollPosition) {
+        $(window).scrollTop(localStorage.getItem("scrollPosition"));
+    }
+}
+
+function setupHeaderScroll() {
+    let anchor_offset = $('a[href="#SECTION_ABOUT"]').offset().top;
+
+    $(window).on("scroll", () => {
         if ($(window).scrollTop() > anchor_offset) {
             $("header").addClass("scrolled");
         }
@@ -20,6 +47,10 @@ function scrollHeader() {
             $("header").removeClass("scrolled");
         }
     });
+}
+
+function setupFooterYear() {
+    $(".footer-year").append(new Date().getFullYear());
 }
 
 async function createProjectItems() {
@@ -116,12 +147,7 @@ async function createTechnologyIcon(name, file) {
     });
 }
 
-function createFooterTransition() {
-    fetchFile("./svg/transition.svg", (data) => {
-        $(".transition").append(data);
-    });
-}
-
-function updateFooterYear() {
-    $(".footer-year").append(new Date().getFullYear());
+async function createFooterTransition() {
+    let data = await fetchFileAsync("./svg/transition.svg");
+    $(".transition").append(data);
 }

@@ -33,7 +33,7 @@ namespace JonathanPaugh
             await webServer.Start();
         }
 
-        private void SyncReload()
+        private static void SyncReload()
         {
             #if DEBUG
             try
