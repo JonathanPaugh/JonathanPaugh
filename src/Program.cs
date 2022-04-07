@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
+using System.IO;
 using System.Threading.Tasks;
 using JapeCore;
 using JapeService;
@@ -26,8 +28,23 @@ namespace JonathanPaugh
 
         protected override async Task OnStartAsync()
         {
+            SyncReload();
             WebServer webServer = new(http, https);
             await webServer.Start();
+        }
+
+        private void SyncReload()
+        {
+            #if DEBUG
+            try
+            {
+                File.WriteAllText(".sync", DateTime.Now.ToString(CultureInfo.InvariantCulture));
+            }
+            catch
+            { 
+                Log.Write("Error: Sync File");
+            }
+            #endif
         }
     }
 }

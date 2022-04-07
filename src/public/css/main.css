@@ -361,7 +361,7 @@ nav > * {
 }
 
 .splash-icons svg:hover {
-  fill: var(--color-secondary)!important;
+  fill: var(--color-secondary-accent)!important;
 }
 
 .splash-icons a:nth-child(1) { animation: 1.5s fadeIn; animation-delay: 0.75s; animation-fill-mode: backwards; }
@@ -429,11 +429,10 @@ nav > * {
 }
 
 .project-item-preview > img {
-  width: 100%;
-  max-width: 600px;
+  max-width: 320px;
   max-height: 300px;
   object-fit: cover;
-  border: 1px solid white;
+  border: 1px solid var(--color-light);
   border-radius: 6px;
 }
 
