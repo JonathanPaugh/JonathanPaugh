@@ -17,11 +17,11 @@
     "title": "Community Garden Web App",
     "type": "School Project",
     "year": "2021",
-    "badges": [ "Html", "Css", "Javascript", "Node.js", "Firebase", "AWS" ],
+    "badges": [ "Node.js", "Firebase", "AWS", "Webstack" ],
     "preview": "./img/green-space.png",
     "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/COMP-2800-Team-BBY-23-GreenSpace" ],
-      [ "View Live Demo", "http://green-space.us-west-1.elasticbeanstalk.com/" ]
+      [ "View Live Demo", "http://green-space.us-west-1.elasticbeanstalk.com/" ],
+      [ "View Source Code", "https://github.com/JonathanPaugh/COMP-2800-Team-BBY-23-GreenSpace" ]
     ],
     "info": {}
   },
@@ -44,7 +44,7 @@
     "sub": "Winter Hacks",
     "type": "Hackathon Project",
     "year": "2021",
-    "badges": [ "Html", "Css", "Figma" ],
+    "badges": [ "Figma", "Webstack" ],
     "preview": "./img/trackerly.png",
     "buttons": [
       [ "View Website", "https://jonathanpaugh.github.io/Trackerly" ],
@@ -69,7 +69,7 @@
     "url": "https://github.com/JonathanPaugh/CSharpWebServer",
     "title": "Backend Web Server System",
     "sub": "Currently Running This Website",
-    "type": "Personal Project (Running This Website)",
+    "type": "Personal Project",
     "year": "2021 - Current",
     "badges": [ "C#", "MySQL", "MongoDB", "Redis" ],
     "preview": "./img/csharp-webserver.png",
@@ -83,7 +83,7 @@
     "title": "Html Element Stacking Game",
     "type": "Personal Project",
     "year": "2019",
-    "badges": [ "Html", "Css", "Javascript" ],
+    "badges": [ "Webstack" ],
     "preview": "./img/stack.png",
     "buttons": [
       [ "View Live Demo", "./portfolio/stack/stack.html" ],
@@ -110,7 +110,7 @@
     "title": "Covid Review Web App",
     "type": "School Project",
     "year": "2021",
-    "badges": [ "Html", "Css", "Javascript", "Firebase" ],
+    "badges": [ "Firebase", "Webstack" ],
     "preview": "./img/covaware.png",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/Comp1800-Team25" ]
@@ -149,7 +149,7 @@
     "title": "Tools To Improve Production Flow",
     "type": "Personal Project",
     "year": "2020 - Current",
-    "badges": [ "C#", "Unity", "Html", "Css", "Javascript" ],
+    "badges": [ "C#", "Unity", "Webstack" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/JapetheapeFramework" ]

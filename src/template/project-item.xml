@@ -4,12 +4,14 @@
             <div>
                 <div class="project-item-heading"></div>
                 <div class="project-item-title"></div>
-                <div>
-                    <span class="project-item-type"></span>
-                    <span class="project-item-year"></span>
+                <div class="project-item-info">
+                    <div>
+                        <span class="project-item-type"></span>
+                        <span class="project-item-year"></span>
+                    </div>
+                    <div class="project-item-badges"></div>
                 </div>
             </div>
-            <div class="project-item-badges"></div>
         </div>
         <div class="project-item-preview"></div>
     </a>

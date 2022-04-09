@@ -15,5 +15,6 @@
   "Redis": [ "redis.svg", "redis-mono.svg" ],
   "Figma": [ "figma.svg", "figma-mono.svg" ],
   "AWS": [ "aws.svg", "aws-mono.svg" ],
-  "Digital Ocean": [ "digital-ocean-mono.svg", "digital-ocean-mono.svg" ]
+  "Digital Ocean": [ "digital-ocean-mono.svg", "digital-ocean-mono.svg" ],
+  "Webstack": [ "webstack.svg" ]
 }
