@@ -229,8 +229,8 @@ button:hover:not(.no-hover) {
 
 .no-hover {}
 
-.svg-hover-start { stop-color: var(--color-primary); }
-.svg-hover-end { stop-color: var(--color-secondary-accent); }
+.gradient-icon-hover-start { stop-color: var(--color-primary); }
+.gradient-icon-hover-end { stop-color: var(--color-secondary-accent); }
 
 .heading {
   padding-bottom: var(--offset-normal);
@@ -246,6 +246,7 @@ button:hover:not(.no-hover) {
 
 .section {
   padding: var(--offset-large);
+  background-color: var(--color-background);
 }
 
 .tooltip {
@@ -276,7 +277,6 @@ body {
   color: var(--color-text);
   font-family: var(--font-normal);
   font-size: var(--font-size-normal);
-  background: var(--color-background);
 }
 
 /* HEADER */
@@ -320,11 +320,33 @@ nav > * {
 /* SPLASH */
 
 .section-splash {
-  height: 100vh;
-  background: linear-gradient(165deg, var(--color-secondary) 0%, var(--color-primary) 35%, var(--color-primary-burn) 100%);
+  padding: 0;
+  background-color: initial;
 }
 
 .splash-container {
+  position: absolute;
+  z-index: -1;
+}
+
+.splash {
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-splash-start { stop-color: var(--color-secondary); }
+.gradient-splash-accent { stop-color: var(--color-primary); }
+.gradient-splash-end { stop-color: var(--color-primary-burn); }
+.gradient-splash-fade { stop-color: var(--color-background); }
+
+/* LANDING */
+
+.section-landing {
+  height: 100vh;
+  background-color: initial;
+}
+
+.landing-container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -332,7 +354,7 @@ nav > * {
   align-items: center;
 }
 
-.splash-logo {
+.landing-logo {
   text-align: center;
   font-family: var(--font-logo);
   letter-spacing: 3px;
@@ -341,7 +363,7 @@ nav > * {
   -webkit-font-smoothing: antialiased;
 }
 
-.splash-title {
+.landing-title {
   text-align: center;
   font-family: var(--font-logo);
   animation: 0.75s fadeInDown;
@@ -350,7 +372,7 @@ nav > * {
   -webkit-font-smoothing: antialiased;
 }
 
-.splash-icons {
+.landing-socials {
   padding: 0 40% 0 40%;
   display: flex;
   column-gap: var(--offset-normal);
@@ -358,23 +380,23 @@ nav > * {
   justify-content: space-between;
 }
 
-.splash-icons svg {
+.landing-socials svg {
   width: 100%;
   height: 100%;
 }
 
-.splash-icons svg:hover {
+.landing-socials svg:hover {
   fill: var(--color-secondary-accent)!important;
 }
 
-.splash-icons a:nth-child(1) { animation: 1.5s fadeIn; animation-delay: 0.75s; animation-fill-mode: backwards; }
-.splash-icons a:nth-child(2) { animation: 1.5s fadeIn; animation-delay: 1.25s; animation-fill-mode: backwards; }
-.splash-icons a:nth-child(3) { animation: 1.5s fadeIn; animation-delay: 1.75s; animation-fill-mode: backwards; }
+.landing-socials a:nth-child(1) { animation: 1.5s fadeIn; animation-delay: 0.75s; animation-fill-mode: backwards; }
+.landing-socials a:nth-child(2) { animation: 1.5s fadeIn; animation-delay: 1.25s; animation-fill-mode: backwards; }
+.landing-socials a:nth-child(3) { animation: 1.5s fadeIn; animation-delay: 1.75s; animation-fill-mode: backwards; }
 
 /* ABOUT */
 
 .section-about {
-  background: linear-gradient(180deg, #32324D 0%, var(--color-background) 40%);
+  background-color: initial;
 }
 
 .section-about > div {
@@ -408,11 +430,11 @@ nav > * {
 }
 
 .project-container {
-  padding: 0 var(--offset-large) 0 var(--offset-large);
+  padding: 0 var(--offset-xlarge) 0 var(--offset-xlarge);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 10vh;
-  column-gap: var(--offset-large);
+  column-gap: calc(var(--offset-xlarge) * 2);
   justify-items: center;
 }
 
@@ -445,7 +467,7 @@ nav > * {
   width: 100%;
   max-height: 40vw;
   object-fit: cover;
-  border: 1px solid var(--color-light);
+  border: 2px solid var(--color-light);
   border-radius: 6px;
 }
 
@@ -476,11 +498,12 @@ nav > * {
 
 /* TRANSITION */
 
-.transition {
+.section-transition {
+  padding: 0;
   margin-bottom: -6px;
 }
 
-.transition > svg {
+.section-transition > svg {
   width: 100%;
   height: 100%;
   fill: var(--color-background-dark);
@@ -499,7 +522,7 @@ footer {
 }
 
 @media only screen and (max-width: 1280px) {
-  .splash-icons {
+  .landing-socials {
     padding: 0 20% 0 20%;
   }
 

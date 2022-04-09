@@ -20,8 +20,10 @@ namespace JonathanPaugh
         
         protected override IEnumerator<WebComponent> Components() {
             templates = CreateTemplater("./template");
-            PathString templatesRequestPath = "/template"; 
-            yield return Route(templatesRequestPath, "./template", async request => await ResponseTemplate(request, templatesRequestPath));
+            PathString templatesRequestPath = "/template";
+            yield return Route(templatesRequestPath, 
+                               "./template", 
+                               async request => await ResponseTemplate(request, templatesRequestPath));
 
             if (DEBUG)
             {
