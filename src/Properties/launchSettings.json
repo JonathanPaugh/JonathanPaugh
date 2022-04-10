@@ -7,10 +7,10 @@
     "LiveServer": {
       "commandName": "Executable",
       "executablePath": "dotnet.exe",
-      "workingDirectory": "$(ProjectDir)",
       "commandLineArgs": "watch run --http 8000",
-      "applicationUrl": "http://localhost:8000",
+      "workingDirectory": "$(ProjectDir)",
       "launchBrowser": true,
+      "applicationUrl": "http://localhost:8000"
     }
   }
 }
