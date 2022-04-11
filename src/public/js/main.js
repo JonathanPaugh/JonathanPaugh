@@ -38,16 +38,18 @@ function injectScrollPosition() {
 }
 
 function setupHeaderScroll() {
-    let anchor_offset = $('a[href="#SECTION_ABOUT"]').offset().top;
+    updateScrollPosition();
+    $(window).on("scroll", updateScrollPosition);
+}
 
-    $(window).on("scroll", () => {
-        if ($(window).scrollTop() > anchor_offset) {
-            $("header").addClass("scrolled");
-        }
-        else {
-            $("header").removeClass("scrolled");
-        }
-    });
+function updateScrollPosition() {
+    let anchor_offset = $(".landing-logo").offset().top;
+    if ($(window).scrollTop() > anchor_offset) {
+        $("header").addClass("scrolled");
+    }
+    else {
+        $("header").removeClass("scrolled");
+    }
 }
 
 function setupFooterYear() {

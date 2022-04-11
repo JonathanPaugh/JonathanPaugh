@@ -3,7 +3,9 @@
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<OutputType>Exe</OutputType>
-		<DebugType>portable</DebugType>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+		<AllowedReferenceRelatedFileExtensions>*.pdb</AllowedReferenceRelatedFileExtensions>
 		<SelfContained>true</SelfContained>
 		<PublishTrimmed>false</PublishTrimmed>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
