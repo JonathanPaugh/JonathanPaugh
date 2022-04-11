@@ -97,7 +97,7 @@ async function createTechnologyIcon(name, file) {
     let data = await fetchFileAsync(`./svg/technologies/${file}`);
 
     let container = createDiv();
-    $(".about-technologies-container").append(container);
+    $(".technologies-container").append(container);
 
     let link = createElement("a");
     container.append(link);

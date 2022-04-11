@@ -10,7 +10,7 @@ namespace JonathanPaugh
     {
         private Templater templates;
 
-        private const bool DEBUG = true;
+        private const bool DEBUG = false;
 
         #if DEBUG
         protected override bool Caching => false;
