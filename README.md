@@ -8,6 +8,6 @@ I'm Jonathan, I am currently working on some tools to improve web development an
 - JavaScript
 
 ## Interests
-- Game Development &#127918;
-- AI Agents & Computing &#129504;
-- Sound Design &#127911;
+- 🎲 Game Development
+- 🧠 AI Agents & Computing
+- 🎧 Sound Design
