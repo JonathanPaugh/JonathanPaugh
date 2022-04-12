@@ -21,7 +21,7 @@
     "preview": "./img/green-space.png",
     "buttons": [
       [ "View Live Demo", "http://green-space.us-west-1.elasticbeanstalk.com/" ],
-      [ "View Source Code", "https://github.com/JonathanPaugh/COMP-2800-Team-BBY-23-GreenSpace" ]
+      [ "View Source Code", "https://github.com/JonathanPaugh/GreenSpace" ]
     ],
     "info": {}
   },
@@ -100,20 +100,20 @@
     "badges": [ "Unity", "C#" ],
     "preview": "./img/octagon.png",
     "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/octagonal-adventure" ],
+      [ "View Source Code", "https://github.com/JonathanPaugh/OctagonalAdventure" ],
       [ "View Hackathon", "https://devpost.com/software/octagonal-adventure" ]
     ],
     "info": {}
   },
   "Covaware": {
-    "url": "https://github.com/JonathanPaugh/Comp1800-Team25",
+    "url": "https://github.com/JonathanPaugh/Covaware",
     "title": "Covid Review Web App",
     "type": "School Project",
     "year": "2021",
     "badges": [ "Firebase", "Webstack" ],
     "preview": "./img/covaware.png",
     "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/Comp1800-Team25" ]
+      [ "View Source Code", "https://github.com/JonathanPaugh/Covaware" ]
     ],
     "info": {}
   },
