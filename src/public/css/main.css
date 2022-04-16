@@ -1,21 +1,21 @@
 :root {
-  --color-light: #FFF;
-  --color-dark: #000;
+  --color-light: initial;
+  --color-dark: initial;
 
-  --color-text: #EEE;
-  --color-text-soft: #AAA;
+  --color-text: initial;
+  --color-text-soft: initial;
 
-  --color-background: #333;
-  --color-background-accent: #444;
-  --color-background-fade: #222;
+  --color-background: initial;
+  --color-background-accent: initial;
+  --color-background-fade: initial;
 
-  --color-primary: #335;
-  --color-primary-accent: #337;
-  --color-primary-burn: #334;
+  --color-primary: initial;
+  --color-primary-accent: initial;
+  --color-primary-fade: initial;
 
-  --color-secondary: #353;
-  --color-secondary-accent: #373;
-  --color-secondary-fade: #343;
+  --color-secondary: initial;
+  --color-secondary-accent: initial;
+  --color-secondary-fade: initial;
 
   --offset-xsmall: 0.25em;
   --offset-small: 0.5em;
@@ -210,6 +210,7 @@ a {
 }
 
 a:hover:not(.no-hover), a *:hover:not(.no-hover) {
+  cursor: pointer;
   color: var(--color-secondary-accent);
 }
 
@@ -233,9 +234,20 @@ button:hover:not(.no-hover) {
   cursor: pointer;
 }
 
+svg {
+  fill: var(--color-text);
+}
+
 /***********/
 /* GENERAL */
 /***********/
+
+.nav-anchor {
+  width: 0;
+  height: 0;
+  position: relative;
+  bottom: var(--font-size-heading-fluid);
+}
 
 .no-hover {}
 
@@ -260,6 +272,7 @@ button:hover:not(.no-hover) {
   padding: var(--offset-large);
   background-color: var(--color-background);
 }
+
 @media only screen and (max-width: 1024px) {
   .section {
     padding: var(--offset-large) var(--offset-small) var(--offset-large) var(--offset-small);
@@ -279,6 +292,21 @@ button:hover:not(.no-hover) {
 
 .tooltip.active {
   opacity: 1;
+}
+
+.tooltip.hover {
+  opacity: 1;
+}
+
+.theme svg {
+  width: 32px;
+  height: 32px;
+}
+
+.theme.active svg {
+  padding: 2px;
+  fill: url(#hover);
+  border-radius: 32px;
 }
 
 /**********/
@@ -309,22 +337,44 @@ header {
 
 header.scrolled {
   background-color: var(--color-background);
-  box-shadow: 0px 4px 8px var(--color-dark);
+  box-shadow: 0px 4px 8px black;
+}
+
+header:not(.scrolled) .theme.active svg {
+  background-color: var(--color-text);
+}
+
+.header-themes {
+  padding-left: var(--offset-small);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: var(--offset-small);
+  column-gap: var(--offset-small);
+}
+
+@media only screen and (max-width: 480px) {
+  .header-themes {
+    position: absolute;
+    padding-top: var(--offset-small);
+    flex-direction: column;
+  }
 }
 
 nav {
   width: 100%;
-  padding-right: var(--offset-large);
+  padding: 0 var(--offset-normal) 0 var(--offset-normal);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   row-gap: var(--offset-xsmall);
   column-gap: var(--offset-large);
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 480px) {
   nav {
-    padding-right: 0;
+    padding: initial;
     flex-direction: column;
   }
 }
@@ -354,7 +404,7 @@ nav > * {
 
 .gradient-splash-start { stop-color: var(--color-secondary); }
 .gradient-splash-accent { stop-color: var(--color-primary); }
-.gradient-splash-end { stop-color: var(--color-primary-burn); }
+.gradient-splash-end { stop-color: var(--color-primary-fade); }
 .gradient-splash-fade { stop-color: var(--color-background); }
 
 /* LANDING */
@@ -514,6 +564,10 @@ nav > * {
   height: 100%;
 }
 
+.technologies-container a.active svg {
+  fill: url(#hover);
+}
+
 /* PROJECT */
 
 .section-project {
@@ -537,6 +591,10 @@ nav > * {
 
 .project-item {
   width: 100%;
+}
+
+.project-item-link:hover > .project-item-preview > img {
+  border-color: var(--color-secondary-accent);
 }
 
 .project-item-info {
@@ -591,11 +649,13 @@ nav > * {
 .contact-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
 
 /* TRANSITION */
 
 .section-transition {
+  background-color: var(--color-background-accent);
   padding: 0;
   margin-bottom: -6px;
 }
@@ -615,4 +675,11 @@ footer {
   justify-content: space-between;
   color: var(--color-secondary-fade);
   background-color: var(--color-background-fade);
+}
+
+.footer-themes {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  column-gap: var(--offset-small);
 }

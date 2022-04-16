@@ -20,8 +20,8 @@
     "badges": [ "Node.js", "Firebase", "AWS", "Webstack" ],
     "preview": "./img/green-space.png",
     "buttons": [
-      [ "View Live Demo", "http://green-space.us-west-1.elasticbeanstalk.com/" ],
-      [ "View Source Code", "https://github.com/JonathanPaugh/GreenSpace" ]
+      [ "View Source Code", "https://github.com/JonathanPaugh/GreenSpace" ],
+      [ "View Live Demo", "http://green-space.us-west-1.elasticbeanstalk.com/" ]
     ],
     "info": {}
   },
@@ -33,8 +33,8 @@
     "badges": [ "Unity", "C#" ],
     "preview": "./img/limb-man.gif",
     "buttons": [
-      [ "Play Demo", "https://jape.games/LimbMan" ],
-      [ "View Source Code", "https://github.com/JonathanPaugh/LimbMan" ]
+      [ "View Source Code", "https://github.com/JonathanPaugh/LimbMan" ],
+      [ "Play Demo", "https://jape.games/LimbMan" ]
     ],
     "info": {}
   },
@@ -86,8 +86,8 @@
     "badges": [ "Webstack" ],
     "preview": "./img/stack.png",
     "buttons": [
-      [ "View Live Demo", "./portfolio/stack/stack.html" ],
-      [ "View Source Code", "https://github.com/JonathanPaugh/StackHtml" ]
+      [ "View Source Code", "https://github.com/JonathanPaugh/StackHtml" ],
+      [ "View Live Demo", "./portfolio/stack/stack.html" ]
     ],
     "info": {}
   },
@@ -125,8 +125,8 @@
     "badges": [ "Unity", "C#", "Digital Ocean" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
     "buttons": [
-      [ "Play Prototype", "https://jape.games/CubeSuperCube" ],
-      [ "View Source Code", "https://github.com/JonathanPaugh/Cube-Supercube" ]
+      [ "View Source Code", "https://github.com/JonathanPaugh/Cube-Supercube" ],
+      [ "Play Prototype", "https://jape.games/CubeSuperCube" ]
     ],
     "info": {},
     "hidden": true

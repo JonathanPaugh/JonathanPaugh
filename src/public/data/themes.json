@@ -1,0 +1,46 @@
+{
+  "light":
+  {
+    "icon": "light.svg",
+
+    "--color-light": "#000",
+    "--color-dark": "#FFF",
+
+    "--color-text": "#333",
+    "--color-text-soft": "#666",
+
+    "--color-background": "#DDD",
+    "--color-background-accent": "#EEE",
+    "--color-background-fade": "#AAA",
+
+    "--color-primary": "var(--color-secondary-fade)",
+    "--color-primary-accent": "var(--color-secondary-accent)",
+    "--color-primary-fade": "var(--color-background)",
+
+    "--color-secondary": "#F80",
+    "--color-secondary-accent": "#E95",
+    "--color-secondary-fade": "#D42"
+  },
+  "default":
+  {
+    "icon": "dark.svg",
+
+    "--color-light": "#FFF",
+    "--color-dark": "#000",
+
+    "--color-text": "#EEE",
+    "--color-text-soft": "#AAA",
+
+    "--color-background": "#333",
+    "--color-background-accent": "#444",
+    "--color-background-fade": "#222",
+
+    "--color-primary": "#335",
+    "--color-primary-accent": "#337",
+    "--color-primary-fade": "#334",
+
+    "--color-secondary": "#353",
+    "--color-secondary-accent": "#373",
+    "--color-secondary-fade": "#343"
+  }
+}

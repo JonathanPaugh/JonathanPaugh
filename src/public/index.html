@@ -16,7 +16,7 @@
   <!--HEADER-->
 
   <header>
-    <div class="header-logo"></div>
+    <div class="header-themes"></div>
     <nav>
       <div>
         <a href="#SECTION_ABOUT">About</a>
@@ -27,16 +27,14 @@
       <div>
         <a href="#SECTION_PROJECT">Projects</a>
       </div>
-<!--        <div>-->
-<!--          <a href="#SECTION_CONTACT">Contact</a>-->
-<!--        </div>-->
+      <div>
+        <a href="#SECTION_CONTACT">Contact</a>
+      </div>
     </nav>
   </header>
 
   <main>
-
     <div class="splash-container"></div>
-
     <div class="section section-splash">
 
       <!--SPLASH-->
@@ -55,7 +53,8 @@
 
       <!--ABOUT-->
 
-      <div class="section section-about" id="SECTION_ABOUT">
+      <div class="section section-about">
+        <div class="nav-anchor" id="SECTION_ABOUT"></div>
         <h2 class="heading">About</h2>
         <div class="about-personal">
 <!--          <div>-->
@@ -63,7 +62,7 @@
 <!--          </div>-->
           <div class="about-personal-info">
             Hi, I'm Jonathan. I am a software developer with a focus on web design and game development
-            projects. I have experience working on both front-end and back-end development and I enjoy creating tools
+            projects. I have experience working on both front-end and back-end systems and I enjoy creating tools
             to improve development workflow.
           </div>
         </div>
@@ -71,12 +70,10 @@
         <div class="about-columns">
           <div class="about-eduction">
             <h3 class="subheading">Education</h3>
-            <div class="about-education">
-              <div>
-                <div class="about-education-program">Computer Systems Technology</div>
-                <div class="about-education-institute">British Columbia Institute of Technology</div>
-                <div class="about-education-type">Diploma, 2021 &#129122; 2023</div>
-              </div>
+            <div>
+              <div class="about-education-program">Computer Systems Technology</div>
+              <div class="about-education-institute">British Columbia Institute of Technology</div>
+              <div class="about-education-type">Diploma, 2021 &#129122; 2023</div>
             </div>
           </div>
           <div class="about-skills">
@@ -95,7 +92,8 @@
 
     </div>
 
-    <div class="section section-technologies" id="SECTION_TECHNOLOGIES">
+    <div class="section section-technologies">
+      <div class="nav-anchor" id="SECTION_TECHNOLOGIES"></div>
       <h1 class="heading">Technologies</h1>
       <div>
         <div class="technologies-container"></div>
@@ -104,38 +102,41 @@
 
     <!--PROJECTS-->
 
-    <div class="section section-project" id="SECTION_PROJECT">
+    <div class="section section-project">
+      <div class="nav-anchor" id="SECTION_PROJECT"></div>
       <h2 class="heading">Projects</h2>
       <div class="project-container"></div>
     </div>
 
     <!--CONTACT-->
 
-<!--    <div class="section section-contact" id="SECTION_CONTACT">-->
-<!--      <h2 class="heading">Contact</h2>-->
-<!--      <div class="contact-container">-->
-<!--        <div class="text-align-center padding-x-normal">-->
-<!--          <button>Button 1</button>-->
-<!--          <div class="padding-small">Click me to do something.</div>-->
-<!--        </div>-->
-<!--        <div class="text-align-center padding-x-normal">-->
-<!--          <button>Button 2</button>-->
-<!--          <div class="padding-small">I do something cooler than the other button.</div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+    <div class="section section-contact">
+      <div class="nav-anchor" id="SECTION_CONTACT"></div>
+      <h2 class="heading">Contact</h2>
+      <div class="contact-container">
+        <div class="padding-x-normal">
+          <button class="contact-resume">View Resume</button>
+        </div>
+        <div class="padding-x-normal">
+          <a href="mailto:j.d.paugh@gmail.com">
+            <button class="contact-email">Send Email</button>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!--TRANSITION-->
-
     <div class="section section-transition"></div>
-
   </main>
 
     <!--FOOTER-->
 
   <footer class="padding-x-normal">
-    <div class="text-align-left">©<span class="footer-year"></span> Jonathan Paugh</div>
-    <div class="text-align-right"></div>
+    <div class="text-align-left">
+      ©<span class="footer-year"></span>
+      <span style="white-space: nowrap">Jonathan Paugh</span>
+    </div>
+    <div class="footer-themes text-align-right"></div>
   </footer>
 
   <!--ICON GRADIENT-->

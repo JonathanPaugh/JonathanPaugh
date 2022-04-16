@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 using JapeHttp;
 using JapeWeb;
@@ -25,9 +26,11 @@ namespace JonathanPaugh
                                "./template", 
                                async request => await ResponseTemplate(request, templatesRequestPath));
 
+            yield return MapPost("/resume", "./private/JonathanPaugh.pdf", Encoding.UTF8, ReadServerBinary);
+
             if (DEBUG)
             {
-                yield return UseAsync(ResponseConstantsDebug);
+                yield return Use(ResponseConstantsDebug);
             }
         }
 

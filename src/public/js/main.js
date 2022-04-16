@@ -3,12 +3,15 @@ cachedIcons = {};
 $(setupPage);
 
 function onBuilt() {
-    injectScrollPosition();
+    restoreTheme();
+    restoreScrollPosition();
 }
 
 function setupPage() {
+    setupScrollPosition();
     setupHeaderScroll();
     setupFooterYear();
+    setupResume();
     buildPage();
 }
 
@@ -18,7 +21,8 @@ async function buildPage() {
         createSocialIcons(),
         createTechnologyIcons(),
         createProjectItems(),
-        createFooterTransition()
+        createFooterTransition(),
+        createThemes()
     ];
 
     await Promise.all(setup);
@@ -26,8 +30,16 @@ async function buildPage() {
     onBuilt();
 }
 
-function injectScrollPosition() {
-    if (DEBUG !== true) { return; }
+function restoreTheme() {
+    let name = localStorage.getItem("theme");
+    if (name != null) {
+        setTheme(name);
+    } else {
+        setTheme("default");
+    }
+}
+
+function restoreScrollPosition() {
     $(window).on( "unload", () => {
         let scrollPosition = $(window).scrollTop();
         localStorage.setItem("scrollPosition", scrollPosition);
@@ -37,14 +49,19 @@ function injectScrollPosition() {
     }
 }
 
+function setupScrollPosition() {
+    $(window).scrollTop(0);
+}
+
 function setupHeaderScroll() {
     updateScrollPosition();
     $(window).on("scroll", updateScrollPosition);
 }
 
 function updateScrollPosition() {
-    let anchor_offset = $(".landing-logo").offset().top;
-    if ($(window).scrollTop() > anchor_offset) {
+    let anchorOffset = $(".landing-logo").offset().top;
+    let headerOffset = $("header").height();
+    if ($(window).scrollTop() + headerOffset > anchorOffset) {
         $("header").addClass("scrolled");
     }
     else {
@@ -54,6 +71,10 @@ function updateScrollPosition() {
 
 function setupFooterYear() {
     $(".footer-year").append(new Date().getFullYear());
+}
+
+function setupResume() {
+    $(".contact-resume").on("click", requestResume);
 }
 
 async function createSplash() {
@@ -115,9 +136,14 @@ async function createTechnologyIcon(name, file) {
     });
 
     link.hover(() => {
-        tooltip.addClass("active");
+        tooltip.addClass("hover");
     }, () => {
-        tooltip.removeClass("active");
+        tooltip.removeClass("hover");
+    });
+
+    link.on("click", () => {
+        link.toggleClass("active");
+        tooltip.toggleClass("active");
     });
 }
 
@@ -158,9 +184,65 @@ async function createProjectItem(heading, project, template, technologies) {
             let link = createElement("a");
             link.attr("href", url);
             template.find(".project-item-footer").append(link);
-            element = createElement("button")
+            let element = createElement("button")
             element.html(text);
             link.append(element);
         }
     }
+}
+
+async function createThemes() {
+    let data = JSON.parse(await fetchFileAsync("./data/themes.json"));
+    for (const [name, theme] of Object.entries(data)) {
+        await createTheme(name, theme);
+    }
+}
+
+async function createTheme(name, theme) {
+    let data = await fetchFileAsync(`./svg/themes/${theme["icon"]}`);
+    let className = `theme-${name}`;
+
+    let headerIcon = createElement("a").append(data).addClass("theme").addClass(className);
+    let footerIcon = createElement("a").append(data).addClass("theme").addClass(className);
+
+    $(".header-themes").append(headerIcon);
+    $(".footer-themes").append(footerIcon);
+
+    [ headerIcon, footerIcon ].forEach(icon => {
+        icon.on("click", () => {
+            setTheme(name);
+        });
+    });
+}
+
+async function setTheme(name) {
+    let data = JSON.parse(await fetchFileAsync("./data/themes.json"));
+    let root = $(":root")[0];
+    for (const [variable, value] of Object.entries(data[name])) {
+        root.style.setProperty(variable, value);
+        localStorage.setItem("theme", name);
+    }
+
+    $(`.theme`).each(function () {
+        $(this).removeClass("active");
+    });
+
+    $(`.theme-${name}`).each(function() {
+        $(this).addClass("active");
+    });
+}
+
+function requestResume() {
+    let request = new XMLHttpRequest();
+    request.open("POST", "./resume", true);
+    request.responseType = "blob";
+    request.onload = function() {
+        if (this.status !== 200) { return; }
+        let file = new Blob([this.response], { type: "application/pdf" });
+        let link = document.createElement("a");
+        link.href = window.URL.createObjectURL(file);
+        link.target = "_blank";
+        link.click();
+    };
+    request.send();
 }
