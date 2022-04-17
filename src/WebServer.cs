@@ -3,6 +3,7 @@ using System.Text;
 using System.Threading.Tasks;
 using JapeHttp;
 using JapeWeb;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
 namespace JonathanPaugh
@@ -32,6 +33,11 @@ namespace JonathanPaugh
             {
                 yield return Use(ResponseConstantsDebug);
             }
+        }
+
+        protected override void Setup(IApplicationBuilder app)
+        {
+            app.UseHttpsRedirection();
         }
 
         private async Task<Middleware.Result> ResponseConstantsDebug(Middleware.Request request)
