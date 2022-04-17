@@ -11,7 +11,6 @@ function setupPage() {
     setupScrollPosition();
     setupHeaderScroll();
     setupFooterYear();
-    setupResume();
     buildPage();
 }
 
@@ -71,10 +70,6 @@ function updateScrollPosition() {
 
 function setupFooterYear() {
     $(".footer-year").append(new Date().getFullYear());
-}
-
-function setupResume() {
-    $(".contact-resume").on("click", requestResume);
 }
 
 async function createSplash() {
@@ -230,19 +225,4 @@ async function setTheme(name) {
     $(`.theme-${name}`).each(function() {
         $(this).addClass("active");
     });
-}
-
-function requestResume() {
-    let request = new XMLHttpRequest();
-    request.open("POST", "./resume", true);
-    request.responseType = "blob";
-    request.onload = function() {
-        if (this.status !== 200) { return; }
-        let file = new Blob([this.response], { type: "application/pdf" });
-        let link = document.createElement("a");
-        link.href = window.URL.createObjectURL(file);
-        link.target = "_blank";
-        link.click();
-    };
-    request.send();
 }
