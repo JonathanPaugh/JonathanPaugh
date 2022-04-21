@@ -14,11 +14,13 @@ function setupPage() {
 }
 
 async function buildPage() {
+    let buildThemes = async () => {
+        await createThemes();
+        restoreTheme();
+    };
+
     let setup = [
-        async () => {
-            await createThemes();
-            restoreTheme();
-        },
+        buildThemes(),
         createSplash(),
         createSocialIcons(),
         createTechnologyIcons(),
@@ -32,6 +34,7 @@ async function buildPage() {
 }
 
 function restoreTheme() {
+    console.log("hihi");
     let name = localStorage.getItem("theme");
     if (name != null) {
         setTheme(name);
