@@ -3,7 +3,6 @@ cachedIcons = {};
 $(setupPage);
 
 function onBuilt() {
-    restoreTheme();
     restoreScrollPosition();
 }
 
@@ -16,12 +15,15 @@ function setupPage() {
 
 async function buildPage() {
     let setup = [
+        async () => {
+            await createThemes();
+            restoreTheme();
+        },
         createSplash(),
         createSocialIcons(),
         createTechnologyIcons(),
         createProjectItems(),
         createFooterTransition(),
-        createThemes()
     ];
 
     await Promise.all(setup);
