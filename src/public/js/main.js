@@ -34,7 +34,6 @@ async function buildPage() {
 }
 
 function restoreTheme() {
-    console.log("hihi");
     let name = localStorage.getItem("theme");
     if (name != null) {
         setTheme(name);
