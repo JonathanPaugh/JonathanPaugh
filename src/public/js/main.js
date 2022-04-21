@@ -39,6 +39,7 @@ function restoreTheme() {
 }
 
 function restoreScrollPosition() {
+    if (!DEBUG) { return; }
     $(window).on( "unload", () => {
         let scrollPosition = $(window).scrollTop();
         localStorage.setItem("scrollPosition", scrollPosition);
