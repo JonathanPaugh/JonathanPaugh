@@ -571,8 +571,8 @@ nav > * {
   height: 100%;
 }
 
-.technologies-container a.active svg {
-  fill: url(#hover);
+.technologies-container * {
+  cursor: default !important;
 }
 
 /* PROJECT */
