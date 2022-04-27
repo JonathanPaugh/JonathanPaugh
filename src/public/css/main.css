@@ -571,10 +571,6 @@ nav > * {
   height: 100%;
 }
 
-.technologies-container a.active svg {
-  fill: url(#hover);
-}
-
 /* PROJECT */
 
 .section-project {
