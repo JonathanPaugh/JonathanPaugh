@@ -141,10 +141,10 @@ async function createTechnologyIcon(name, file) {
         tooltip.removeClass("hover");
     });
 
-    link.on("click", () => {
-        link.toggleClass("active");
-        tooltip.toggleClass("active");
-    });
+    // link.on("click", () => {
+    //     link.toggleClass("active");
+    //     tooltip.toggleClass("active");
+    // });
 }
 
 async function createProjectItems() {

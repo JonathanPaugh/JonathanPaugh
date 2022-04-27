@@ -494,11 +494,18 @@ nav > * {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .about-personal {
+    flex-direction: column;
+  }
+}
+
 .about-personal-image {
-  width: 10vw;
-  height: 10vw;
+  width: 128px;
+  height: 128px;
   border: solid 2px var(--color-light);
-  border-radius: 10vw;
+  border-radius: 128px;
+  object-fit: cover;
 }
 
 .about-personal-info {
