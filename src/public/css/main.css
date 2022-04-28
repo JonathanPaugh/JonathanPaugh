@@ -566,10 +566,6 @@ nav > * {
   }
 }
 
-.technologies-container a {
-  cursor: initial !important;
-}
-
 .technologies-container svg {
   width: 100%;
   height: 100%;

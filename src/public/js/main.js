@@ -123,6 +123,7 @@ async function createTechnologyIcon(name, file) {
     $(".technologies-container").append(container);
 
     let link = createElement("a");
+    link.addClass("no-hover");
     container.append(link);
     link.append(data);
 
