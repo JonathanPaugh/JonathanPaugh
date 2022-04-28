@@ -567,7 +567,7 @@ nav > * {
 }
 
 .technologies-container a {
-  cursor: default;
+  cursor: default !important;
 }
 
 .technologies-container svg {
