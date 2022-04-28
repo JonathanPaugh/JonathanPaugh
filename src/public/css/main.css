@@ -210,6 +210,7 @@ a {
 }
 
 a:hover:not(.no-hover), a *:hover:not(.no-hover) {
+  cursor: pointer;
   color: var(--color-secondary-accent);
 }
 
@@ -563,6 +564,10 @@ nav > * {
   .technologies-container {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.technologies-container a {
+  cursor: default;
 }
 
 .technologies-container svg {
