@@ -571,6 +571,10 @@ nav > * {
   height: 100%;
 }
 
+.technologies-container * {
+  cursor: default !important;
+}
+
 /* PROJECT */
 
 .section-project {
