@@ -210,7 +210,6 @@ a {
 }
 
 a:hover:not(.no-hover), a *:hover:not(.no-hover) {
-  cursor: pointer;
   color: var(--color-secondary-accent);
 }
 
