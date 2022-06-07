@@ -20,8 +20,7 @@
     "badges": [ "Node.js", "Firebase", "AWS", "Webstack" ],
     "preview": "./img/green-space.png",
     "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/GreenSpace" ],
-      [ "View Live Demo", "http://green-space.us-west-1.elasticbeanstalk.com/" ]
+      [ "View Source Code", "https://github.com/JonathanPaugh/GreenSpace" ]
     ],
     "info": {}
   },
