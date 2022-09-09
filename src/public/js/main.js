@@ -111,7 +111,7 @@ async function createTechnologyIcons() {
     let data = await fetchFileAsync("./data/technologies.json");
     let technologies = JSON.parse(data);
     for (const [name, files] of Object.entries(technologies)) {
-        if (!files[0]) { return; }
+        if (!files[0]) { continue; }
         await createTechnologyIcon(name, files[2]);
     }
 }

@@ -12,6 +12,19 @@
     ],
     "info": {}
   },
+  "C# Web Server": {
+    "url": "https://github.com/JonathanPaugh/CSharpWebServer",
+    "title": "Currently Running This Website",
+    "sub": "Currently Running This Website",
+    "type": "Personal Project",
+    "year": "2021 - Current",
+    "badges": [ "C#", "MySQL", "MongoDB", "Redis" ],
+    "preview": "./img/csharp-webserver.png",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/CSharpWebServer" ]
+    ],
+    "info": {}
+  },
   "GreenSpace": {
     "url": "http://green-space.us-west-1.elasticbeanstalk.com",
     "title": "Community Garden Web App",
@@ -26,7 +39,7 @@
   },
   "Limb Man": {
     "url": "https://jape.games/LimbMan",
-    "title": "Physics Based Rage Platformer",
+    "title": "Physics Based Platformer",
     "type": "Personal Project",
     "year": "2021 - Current",
     "badges": [ "Unity", "C#" ],
@@ -61,19 +74,6 @@
     "preview": "./img/crossdle.png",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/Crossdle" ]
-    ],
-    "info": {}
-  },
-  "C# Web Server": {
-    "url": "https://github.com/JonathanPaugh/CSharpWebServer",
-    "title": "Backend Web Server System",
-    "sub": "Currently Running This Website",
-    "type": "Personal Project",
-    "year": "2021 - Current",
-    "badges": [ "C#", "MySQL", "MongoDB", "Redis" ],
-    "preview": "./img/csharp-webserver.png",
-    "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/CSharpWebServer" ]
     ],
     "info": {}
   },
@@ -114,7 +114,8 @@
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/Covaware" ]
     ],
-    "info": {}
+    "info": {},
+    "hidden": true
   },
   "Cube Supercube": {
     "url": "https://jape.games/CubeSuperCube",
@@ -130,9 +131,9 @@
     "info": {},
     "hidden": true
   },
-  "Jape Core": {
+  "C# Tools": {
     "url": "https://github.com/JonathanPaugh/JapeCore",
-    "title": "Personal C# Module Library",
+    "title": "Personal C# Tool Library",
     "type": "Personal Project",
     "year": "2021 - Current",
     "badges": [ "C#" ],
@@ -145,7 +146,7 @@
   },
   "Unity Framework": {
     "url": "https://github.com/JonathanPaugh/JapetheapeFramework",
-    "title": "Tools To Improve Production Flow",
+    "title": "Tools to Improve Production Flow",
     "type": "Personal Project",
     "year": "2020 - Current",
     "badges": [ "C#", "Unity", "Webstack" ],

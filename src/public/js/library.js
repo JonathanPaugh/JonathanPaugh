@@ -17,6 +17,6 @@ function fetchFile(path, callback) {
 }
 
 async function fetchFileAsync(path) {
-    let response = await fetch(`${window.location.origin}/${path}`)
-    return response.text()
+    let response = await fetch(`${window.location.origin}/${path}`);
+    return response.text();
 }
