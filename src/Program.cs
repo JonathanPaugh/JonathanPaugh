@@ -18,7 +18,7 @@ namespace JonathanPaugh
 
         private static async Task Main(string[] args) => await RunAsync<Program>(args);
 
-        protected override IEnumerable<ICommandArg> Args() => Service.Args;
+        protected override ICommandArg[] Args() => Service.Args;
 
         protected override void OnSetup(int http, int https)
         {
