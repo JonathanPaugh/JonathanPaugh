@@ -17,7 +17,7 @@
     "title": "Currently Running This Website",
     "sub": "Currently Running This Website",
     "type": "Personal Project",
-    "year": "2021 - Current",
+    "year": "2021",
     "badges": [ "C#", "MySQL", "MongoDB", "Redis" ],
     "preview": "./img/csharp-webserver.png",
     "buttons": [
@@ -26,7 +26,7 @@
     "info": {}
   },
   "GreenSpace": {
-    "url": "http://green-space.us-west-1.elasticbeanstalk.com",
+    "url": "https://github.com/JonathanPaugh/GreenSpace",
     "title": "Community Garden Web App",
     "type": "School Project",
     "year": "2021",
@@ -41,7 +41,7 @@
     "url": "https://jape.games/LimbMan",
     "title": "Physics Based Platformer",
     "type": "Personal Project",
-    "year": "2021 - Current",
+    "year": "2021",
     "badges": [ "Unity", "C#" ],
     "preview": "./img/limb-man.gif",
     "buttons": [

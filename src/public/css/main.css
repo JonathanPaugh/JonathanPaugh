@@ -22,6 +22,7 @@
   --offset-normal: 1em;
   --offset-large: 2em;
   --offset-xlarge: 4em;
+  --offset-section: 8em;
 
   --font-size-xsmall: 10pt;
   --font-size-small: 14pt;
@@ -49,7 +50,7 @@
 /**********/
 
 .padding-small {
-  padding: var(--offset-small);
+  padding: var(--offset-small) !important;
 }
 
 .padding-normal {
@@ -204,6 +205,7 @@ ul {
   list-style-type: none;
 }
 
+
 a {
   color: var(--color-text);
   text-decoration: none;
@@ -211,7 +213,7 @@ a {
 
 a:hover:not(.no-hover), a *:hover:not(.no-hover) {
   cursor: pointer;
-  color: var(--color-secondary-accent);
+  color: var(--color-secondary-accent) !important;
 }
 
 a svg:hover:not(.no-hover) {
@@ -270,6 +272,7 @@ svg {
 
 .section {
   padding: var(--offset-large);
+  padding-bottom: var(--offset-section);
   background-color: var(--color-background);
 }
 
@@ -307,6 +310,13 @@ svg {
   padding: 2px;
   fill: url(#hover);
   border-radius: 32px;
+}
+
+.card {
+  padding: var(--offset-normal);
+  border-radius: 1px;
+  background-color: var(--color-background-accent);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /**********/
@@ -501,11 +511,19 @@ nav > * {
 }
 
 .about-personal-image {
-  width: 128px;
-  height: 128px;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 20vw;
   border: solid 2px var(--color-light);
-  border-radius: 128px;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 480px) {
+  .about-personal-image {
+    width: 60vw;
+    height: 60vw;
+    border-radius: 60vw;
+  }
 }
 
 .about-personal-info {
@@ -513,6 +531,7 @@ nav > * {
 }
 
 .about-columns {
+  padding: 0 5vw 0 5vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 10vw;
@@ -522,10 +541,6 @@ nav > * {
   .about-columns {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.about-columns > * {
-  padding: var(--offset-large) 0 var(--offset-large) 0;
 }
 
 .about-education-program {
@@ -538,8 +553,11 @@ nav > * {
 }
 
 .about-education-type {
-  font-size: var(--font-size-small);
-  color: var(--color-secondary-accent);
+  font-size: var(--font-size-normal);
+}
+
+.about-skills ul > li {
+  padding-bottom: var(--offset-small);
 }
 
 /* TECHNOLOGIES */
@@ -583,7 +601,7 @@ nav > * {
 }
 
 .project-container {
-  padding: 0 5vw 0 5vw;
+  padding: 0 10vw 0 10vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 10vh;
@@ -600,6 +618,14 @@ nav > * {
   width: 100%;
 }
 
+.project-item-title {
+  font-size: var(--font-size-large);
+}
+
+.project-item-heading {
+  padding-bottom: var(--offset-small);
+}
+
 .project-item-link:hover > .project-item-preview > img {
   border-color: var(--color-secondary-accent);
 }
@@ -607,6 +633,8 @@ nav > * {
 .project-item-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-small);
 }
 
 .project-item-type, .project-item-year {

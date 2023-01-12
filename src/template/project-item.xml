@@ -1,19 +1,23 @@
 <div class="project-item">
-    <a class="project-item-link">
-        <div class="project-item-header">
-            <div>
-                <div class="project-item-heading"></div>
-                <div class="project-item-title"></div>
-                <div class="project-item-info">
-                    <div>
-                        <span class="project-item-type"></span>
-                        <span class="project-item-year"></span>
+    <div class="card padding-small">
+        <a class="project-item-link">
+            <div class="project-item-header">
+                <div>
+                    <div class="project-item-heading">
+                        <div class="project-item-title"></div>
+                        <div class="project-item-subtitle"></div>
                     </div>
-                    <div class="project-item-badges"></div>
+                    <div class="project-item-info">
+                        <div>
+                            <span class="project-item-type"></span>
+                            <span class="project-item-year"></span>
+                        </div>
+                        <div class="project-item-badges"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="project-item-preview"></div>
-    </a>
-    <div class="project-item-footer"></div>
+            <div class="project-item-preview"></div>
+        </a>
+        <div class="project-item-footer"></div>
+    </div>
 </div>

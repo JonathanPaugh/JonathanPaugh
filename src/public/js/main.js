@@ -156,8 +156,8 @@ async function createProjectItem(heading, project, template, technologies) {
     template = $(template).appendTo(".project-container");
     template.find(".project-item-link").attr("href", project.url);
 
-    template.find(".project-item-heading").html(heading);
-    template.find(".project-item-title").html(project.title);
+    template.find(".project-item-title").html(heading);
+    template.find(".project-item-subtitle").html(project.title);
     template.find(".project-item-type").html(`${project.type}, `);
     template.find(".project-item-year").html(project.year.replace("-", "\uD83E\uDC62"));
 
