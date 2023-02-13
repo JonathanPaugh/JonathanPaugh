@@ -4,8 +4,8 @@ I'm Jonathan, I am currently working on some tools to improve web development an
 
 ## Favorite Languages
 - C\#
-- Python
 - JavaScript
+- Python
 
 ## Interests
 - 🌐 Web Development
