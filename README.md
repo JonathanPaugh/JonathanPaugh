@@ -10,4 +10,4 @@ I'm Jonathan, I am currently working on some tools to improve web development an
 ## Interests
 - 🌐 Web Development
 - 🎲 Game Development
-- 🧠 AI Computing & Data engineering
+- 🧠 AI Computing
