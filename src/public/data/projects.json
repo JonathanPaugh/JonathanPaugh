@@ -1,58 +1,101 @@
 {
+  "Dialtone Combinator": {
+    "url": "https://dialpad.github.io/dialtone-combinator/",
+    "title": "Vue component sandbox",
+    "type": "Industry Project",
+    "year": "2022",
+    "badges": [ "Vue", "Webstack" ],
+    "preview": "./img/dialtone-combinator.png",
+    "buttons": [
+      [ "View Source Code", "https://github.com/dialpad/dialtone-combinator" ],
+      [ "View Live Demo", "https://dialpad.github.io/dialtone-combinator" ]
+    ]
+  },
   "Abalone AI Sandbox": {
-    "url": "https://github.com/JonathanPaugh/COMP3981-Team4",
-    "title": "Minimax Game Playing Agent",
+    "url": "https://github.com/JonathanPaugh/abalone-ai-sandbox",
+    "title": "Minimax game playing agent",
     "type": "School Project",
     "year": "2022",
     "badges": [ "Python" ],
     "preview": "./img/abalone.gif",
     "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/COMP3981-Team4" ],
-      [ "Download Latest Release", "https://github.com/JonathanPaugh/COMP3981-Team4/releases" ]
-    ],
-    "info": {}
+      [ "View Source Code", "https://github.com/JonathanPaugh/abalone-ai-sandbox" ],
+      [ "Download Latest Release", "https://github.com/JonathanPaugh/abalone-ai-sandbox/releases" ]
+    ]
+  },
+  "Limb Man": {
+    "url": "https://jape.games/LimbMan",
+    "title": "Physics based platformer",
+    "type": "Personal Project",
+    "year": "2021 - Current",
+    "badges": [ "Unity", "C#" ],
+    "preview": "./img/limb-man.gif",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/LimbMan" ],
+      [ "Play Demo", "https://jape.games/LimbMan" ]
+    ]
+  },
+  "Unity Framework": {
+    "url": "https://github.com/JonathanPaugh/JapeFramework",
+    "title": "Unity developer tools",
+    "type": "Personal Project",
+    "year": "2020 - Current",
+    "badges": [ "C#", "Unity", "Webstack" ],
+    "preview": "./img/unity-framework.png",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/JapeFramework" ]
+    ]
   },
   "C# Web Server": {
     "url": "https://github.com/JonathanPaugh/CSharpWebServer",
-    "title": "Currently Running This Website",
-    "sub": "Currently Running This Website",
+    "title": "Minimalist web server",
+    "sub": "Currently running this website",
     "type": "Personal Project",
     "year": "2021",
     "badges": [ "C#", "MySQL", "MongoDB", "Redis" ],
     "preview": "./img/csharp-webserver.png",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/CSharpWebServer" ]
-    ],
-    "info": {}
+    ]
   },
-  "GreenSpace": {
-    "url": "https://github.com/JonathanPaugh/GreenSpace",
-    "title": "Community Garden Web App",
-    "type": "School Project",
-    "year": "2021",
-    "badges": [ "Node.js", "Firebase", "AWS", "Webstack" ],
-    "preview": "./img/green-space.png",
-    "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/GreenSpace" ]
-    ],
-    "info": {}
-  },
-  "Limb Man": {
-    "url": "https://jape.games/LimbMan",
-    "title": "Physics Based Platformer",
+  "Cujoe": {
+    "url": "https://github.com/JonathanPaugh/cujoe",
+    "title": "Video streaming web server",
     "type": "Personal Project",
-    "year": "2021",
-    "badges": [ "Unity", "C#" ],
-    "preview": "./img/limb-man.gif",
+    "year": "2022",
+    "badges": [ "C#", "Webstack" ],
+    "preview": "./img/cujoe.png",
     "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/LimbMan" ],
-      [ "Play Demo", "https://jape.games/LimbMan" ]
-    ],
-    "info": {}
+      [ "View Source Code", "https://github.com/JonathanPaugh/cujoe" ]
+    ]
+  },
+  "Jetson Waste Classification": {
+    "url": "https://github.com/JonathanPaugh/jetson-waste-classification",
+    "title": "Waste classification model",
+    "sub": "Deployed on Jetson Nano",
+    "type": "School Project",
+    "year": "2022",
+    "badges": [ "Python" ],
+    "preview": "./img/jetson-waste-classification.jpg",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/jetson-waste-classification" ],
+      [ "Watch Presentation Video", "./video/jetson.mp4" ]
+    ]
+  },
+  "Crossdle": {
+    "url": "https://github.com/JonathanPaugh/Crossdle",
+    "title": "Fusion word game",
+    "type": "School Project",
+    "year": "2022",
+    "badges": [ "Java", "Firebase" ],
+    "preview": "./img/crossdle.png",
+    "buttons": [
+      [ "View Source Code", "https://github.com/JonathanPaugh/Crossdle" ]
+    ]
   },
   "Trackerly": {
     "url": "https://github.com/JonathanPaugh/Trackerly",
-    "title": "Winter Hacks",
+    "title": "Investment portfolio tracker",
     "sub": "Winter Hacks",
     "type": "Hackathon Project",
     "year": "2021",
@@ -62,37 +105,22 @@
       [ "View Website", "https://jonathanpaugh.github.io/Trackerly" ],
       [ "View Wireframe", "https://www.figma.com/proto/ObkqWEedLct3RURvIFgDRP/Home-Page?node-id=4%3A3&scaling=scale-down" ],
       [ "View Hackathon", "https://devpost.com/software/trackerly" ]
-    ],
-    "info": {}
+    ]
   },
-  "Crossdle": {
-    "url": "https://github.com/JonathanPaugh/Crossdle",
-    "title": "Fusion Word Game",
+  "GreenSpace": {
+    "url": "https://github.com/JonathanPaugh/GreenSpace",
+    "title": "Community garden web application",
     "type": "School Project",
-    "year": "2022",
-    "badges": [ "Java", "Firebase" ],
-    "preview": "./img/crossdle.png",
+    "year": "2021",
+    "badges": [ "Node.js", "Firebase", "AWS", "Webstack" ],
+    "preview": "./img/green-space.png",
     "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/Crossdle" ]
-    ],
-    "info": {}
-  },
-  "Stack": {
-    "url": "./portfolio/stack/stack.html",
-    "title": "Html Element Stacking Game",
-    "type": "Personal Project",
-    "year": "2019",
-    "badges": [ "Webstack" ],
-    "preview": "./img/stack.png",
-    "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/StackHtml" ],
-      [ "View Live Demo", "./portfolio/stack/stack.html" ]
-    ],
-    "info": {}
+      [ "View Source Code", "https://github.com/JonathanPaugh/GreenSpace" ]
+    ]
   },
   "Octagonal Adventure": {
     "url": "https://devpost.com/software/octagonal-adventure",
-    "title": "24-Hour Grapple Platformer",
+    "title": "24-hour grapple platformer",
     "sub": "BC Hacks 2.0",
     "type": "Hackathon Project",
     "year": "2021",
@@ -101,97 +129,30 @@
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/OctagonalAdventure" ],
       [ "View Hackathon", "https://devpost.com/software/octagonal-adventure" ]
-    ],
-    "info": {}
+    ]
   },
-  "Covaware": {
-    "url": "https://github.com/JonathanPaugh/Covaware",
-    "title": "Covid Review Web App",
-    "type": "School Project",
-    "year": "2021",
-    "badges": [ "Firebase", "Webstack" ],
-    "preview": "./img/covaware.png",
-    "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/Covaware" ]
-    ],
-    "info": {},
-    "hidden": true
-  },
-  "Cube Supercube": {
-    "url": "https://jape.games/CubeSuperCube",
-    "title": "WebGL Multiplayer Game Using Dedicated Servers",
+  "Stack": {
+    "url": "./portfolio/stack/stack.html",
+    "title": "Html stacking game",
     "type": "Personal Project",
-    "year": "2020 - 2021",
-    "badges": [ "Unity", "C#", "Digital Ocean" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
+    "year": "2019",
+    "badges": [ "Webstack" ],
+    "preview": "./img/stack.png",
     "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/Cube-Supercube" ],
-      [ "Play Prototype", "https://jape.games/CubeSuperCube" ]
-    ],
-    "info": {},
-    "hidden": true
+      [ "View Source Code", "https://github.com/JonathanPaugh/StackHtml" ],
+      [ "View Live Demo", "./portfolio/stack/stack.html" ]
+    ]
   },
   "C# Tools": {
     "url": "https://github.com/JonathanPaugh/JapeCore",
-    "title": "Personal C# Tool Library",
+    "title": "Personal C# tool library",
     "type": "Personal Project",
-    "year": "2021 - Current",
+    "year": "2021",
     "badges": [ "C#" ],
     "preview": "https://dummyimage.com/600x300/000/fff",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/JapeCore" ]
     ],
-    "info": {},
-    "hidden": true
-  },
-  "Unity Framework": {
-    "url": "https://github.com/JonathanPaugh/JapetheapeFramework",
-    "title": "Tools to Improve Production Flow",
-    "type": "Personal Project",
-    "year": "2020 - Current",
-    "badges": [ "C#", "Unity", "Webstack" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
-    "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/JapetheapeFramework" ]
-    ],
-    "info": {},
-    "hidden": true
-  },
-  "Unity Framework Services": {
-    "url": "https://github.com/JonathanPaugh/JapetheapeFrameworkServices",
-    "title": "External Tools For Unity Framework",
-    "type": "Personal Project",
-    "year": "2019++",
-    "badges": [ "C#", "Digital Ocean", "MongoDB", "Redis" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
-    "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/JapetheapeFrameworkServices" ]
-    ],
-    "info": {},
-    "hidden": true
-  },
-  "Transcender": {
-    "url": "",
-    "title": "Unity Framework To Improve Production Flow",
-    "type": "School Project",
-    "year": "2018",
-    "badges": [ "Unity", "C#" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
-    "buttons": [],
-    "info": {},
-    "hidden": true
-  },
-  "2D Fighter Prototype": {
-    "url": "https://github.com/JonathanPaugh/Game",
-    "title": "Unity Framework To Improve Production Flow",
-    "type": "School Project",
-    "year": "2018",
-    "badges": [ "Unity", "C#" ],
-    "preview": "https://dummyimage.com/600x300/000/fff",
-    "buttons": [
-      [ "View Source Code", "https://github.com/JonathanPaugh/Game" ]
-    ],
-    "info": {},
     "hidden": true
   }
 }

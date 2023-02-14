@@ -626,6 +626,14 @@ nav > * {
   padding-bottom: var(--offset-small);
 }
 
+.project-item-description {
+  color: var(--color-text-soft);
+}
+
+.project-item-link:hover .project-item-description {
+  color: var(--color-text-soft) !important;
+}
+
 .project-item-link:hover > .project-item-preview > img {
   border-color: var(--color-secondary-accent);
 }
