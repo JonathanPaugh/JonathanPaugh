@@ -44,7 +44,8 @@
     "preview": "./img/unity-framework.png",
     "buttons": [
       [ "View Source Code", "https://github.com/JonathanPaugh/JapeFramework" ]
-    ]
+    ],
+    "hidden": true
   },
   "C# Web Server": {
     "url": "https://github.com/JonathanPaugh/CSharpWebServer",

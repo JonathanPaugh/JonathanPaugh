@@ -131,9 +131,11 @@ async function createTechnologyIcon(name, file) {
     tooltip.html(name);
     link.before(tooltip);
 
-    Popper.createPopper(link[0], tooltip[0], {
-        placement: "bottom"
-    });
+    if (window.Popper) {
+        Popper.createPopper(link[0], tooltip[0], {
+            placement: "bottom"
+        });
+    }
 
     link.hover(() => {
         tooltip.addClass("hover");

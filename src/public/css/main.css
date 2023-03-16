@@ -698,7 +698,7 @@ nav > * {
 /* TRANSITION */
 
 .section-transition {
-  background-color: var(--color-background-accent);
+  background-color: var(--color-background);
   padding: 0;
   margin-bottom: -6px;
 }

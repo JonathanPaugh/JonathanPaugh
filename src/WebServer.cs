@@ -27,7 +27,7 @@ namespace JonathanPaugh
                                "./template", 
                                async request => await ResponseTemplate(request, templatesRequestPath));
 
-            yield return MapPost("/resume", "./private/JonathanPaugh.pdf", Encoding.UTF8, ReadServerBinary);
+            // yield return MapPost("/resume", "./private/JonathanPaugh.pdf", Encoding.UTF8, ReadServerBinary);
 
             if (DEBUG)
             {
