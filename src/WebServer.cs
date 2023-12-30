@@ -2,6 +2,7 @@
 using System.Text;
 using System.Threading.Tasks;
 using JapeHttp;
+using JapeService;
 using JapeWeb;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -18,7 +19,7 @@ namespace JonathanPaugh
         protected override bool Caching => false;
         #endif
 
-        public WebServer(int http, int https) : base(http, https) {} 
+        public WebServer(int http, int https, ListenerSettings settings) : base(http, https, settings) {} 
         
         protected override IEnumerator<WebComponent> Components() {
             templates = CreateTemplater("./template");

@@ -9,27 +9,33 @@ using JapeService;
 
 namespace JonathanPaugh
 {
-    internal class Program : ConsoleProgram<int, int>
+    internal class Program : ConsoleProgram
     {
         protected override string DefaultLog => "server.log";
 
         private int http;
         private int https;
-
+        private string ssl;
+        
         private static async Task Main(string[] args) => await RunAsync<Program>(args);
 
         protected override ICommandArg[] Args() => Service.Args;
 
-        protected override void OnSetup(int http, int https)
+        protected override void OnSetup(ArgParser parser)
         {
-            this.http = http;
-            this.https = https;
+            parser.Parse(Service.ArgHttp, out http);
+            parser.Parse(Service.ArgHttps, out https);
+            parser.Parse(Service.ArgSsl, out ssl);
         }
 
         protected override async Task OnStartAsync()
         {
             SyncReload();
-            WebServer webServer = new(http, https);
+            WebServer webServer = new(
+                http, 
+                https,
+                new ListenerSettings(ssl)
+            );
             await webServer.Start();
         }
 
