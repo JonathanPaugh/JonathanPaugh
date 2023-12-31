@@ -3,18 +3,18 @@
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 		<OutputType>Exe</OutputType>
-		<DebugType>none</DebugType>
-		<DebugSymbols>false</DebugSymbols>
-		<AllowedReferenceRelatedFileExtensions>*.pdb</AllowedReferenceRelatedFileExtensions>
+		<DebugType>portable</DebugType>
 		<SelfContained>true</SelfContained>
+		<PublishSingleFile>true</PublishSingleFile>
 		<PublishTrimmed>false</PublishTrimmed>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 		<StartupObject>JonathanPaugh.Program</StartupObject>
+		<AssemblyName>JonathanPaugh</AssemblyName>
+		<RootNamespace>JonathanPaugh</RootNamespace>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<RuntimeIdentifier>linux-x64</RuntimeIdentifier>
-		<PublishSingleFile>true</PublishSingleFile>
 		<DefineConstants>TRACE</DefineConstants>
 	</PropertyGroup>
 
