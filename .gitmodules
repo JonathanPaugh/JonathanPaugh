@@ -1,6 +1,6 @@
 [submodule "JapeCore"]
 	path = JapeCore
-	url = https://github.com/JonathanPaugh/JapeCore.git
+	url = git@github.com:jape-games/jape-core.git
 [submodule "src/public/portfolio/stack"]
 	path = src/public/portfolio/stack
-	url = https://github.com/JonathanPaugh/StackHtml.git
+	url = git@github.com:jonathan-paugh/stack-html.git
