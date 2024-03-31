@@ -2,5 +2,5 @@
 	path = JapeCore
 	url = git@github.com:jape-games/jape-core.git
 [submodule "src/public/portfolio/stack"]
-	path = src/public/portfolio/stack
+	path = src/Jonathan-Paugh/public/portfolio/stack
 	url = git@github.com:jonathan-paugh/stack-html.git

@@ -1,0 +1,12 @@
+@charset "utf-8";
+.main {
+	min-height: 100vh;
+}
+
+.section-text {
+	height: 100vh;
+}
+
+.game-object {
+	border-width: 2px!important;
+}
