@@ -25,7 +25,6 @@
 
 	<ItemGroup>
 		<Watch Include="public\**" />
-		<Content Include="JonathanPaugh\bin\Debug\net7.0\win-x64\public\portfolio\stack\.git" />
 		<Content Include="public\**">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
@@ -49,13 +48,5 @@
 		<ProjectReference Include="..\JapeCore\JapeHttp\JapeHttp.csproj" />
 		<ProjectReference Include="..\JapeCore\JapeService\JapeService.csproj" />
 		<ProjectReference Include="..\JapeCore\JapeWeb\JapeWeb.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="JonathanPaugh\bin\Debug\net7.0\linux-x64\" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <EditorConfigFiles Include="JonathanPaugh\obj\Debug\net7.0\win-x64\JonathanPaugh.GeneratedMSBuildEditorConfig.editorconfig" />
 	</ItemGroup>
 </Project>
