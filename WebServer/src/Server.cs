@@ -6,9 +6,9 @@ using JapeWeb;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
-namespace Web
+namespace WebServer
 {
-    public class WebServer : JapeWeb.WebServer
+    public class Server : JapeWeb.WebServer
     {
         private Templater templates;
 
@@ -18,12 +18,11 @@ namespace Web
         private const bool DEBUG = false;
         #endif
         
-        
         #if DEBUG
         protected override bool Caching => false;
         #endif
 
-        public WebServer(int http, int https, ListenerSettings settings) : base(http, https, settings) {} 
+        public Server(int http, int https, ListenerSettings settings) : base(http, https, settings) {} 
         
         protected override IEnumerator<WebComponent> Components() {
             templates = CreateTemplater("./template");

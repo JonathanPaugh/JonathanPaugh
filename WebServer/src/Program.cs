@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using JapeCore;
 using JapeService;
 
-namespace Web
+namespace WebServer
 {
     internal class Program : ConsoleProgram
     {
@@ -29,12 +29,12 @@ namespace Web
         protected override async Task OnStartAsync()
         {
             SyncReload();
-            WebServer webServer = new(
+            Server server = new(
                 http, 
                 https,
                 new ListenerSettings(ssl)
             );
-            await webServer.Start();
+            await server.Start();
         }
 
         private static void SyncReload()

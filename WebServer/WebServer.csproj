@@ -8,9 +8,9 @@
 		<PublishSingleFile>true</PublishSingleFile>
 		<PublishTrimmed>false</PublishTrimmed>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
-		<StartupObject>Web.Program</StartupObject>
-		<RootNamespace>Web</RootNamespace>
-		<PackageId>Web</PackageId>
+		<StartupObject>WebServer.Program</StartupObject>
+		<RootNamespace>WebServer</RootNamespace>
+		<PackageId>WebServer</PackageId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
