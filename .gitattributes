@@ -1,2 +1,2 @@
-src/JonathanPaugh/public/img/** filter=lfs diff=lfs merge=lfs -text
-src/JonathanPaugh/public/video/** filter=lfs diff=lfs merge=lfs -text
+Web/public/img/** filter=lfs diff=lfs merge=lfs -text
+Web/public/video/** filter=lfs diff=lfs merge=lfs -text
