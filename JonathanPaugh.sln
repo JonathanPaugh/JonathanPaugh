@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JonathanPaugh", "src\JonathanPaugh\JonathanPaugh.csproj", "{15CC465F-09F3-492D-AF93-80BAFAF67FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{15CC465F-09F3-492D-AF93-80BAFAF67FA7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JapeCore", "JapeCore\JapeCore\JapeCore.csproj", "{741C1F0D-7848-4951-8E13-7FB969A94AAF}"
 EndProject

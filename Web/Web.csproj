@@ -8,9 +8,9 @@
 		<PublishSingleFile>true</PublishSingleFile>
 		<PublishTrimmed>false</PublishTrimmed>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
-		<StartupObject>JonathanPaugh.Program</StartupObject>
-		<AssemblyName>JonathanPaugh</AssemblyName>
-		<RootNamespace>JonathanPaugh</RootNamespace>
+		<StartupObject>Web.Program</StartupObject>
+		<RootNamespace>Web</RootNamespace>
+		<PackageId>Web</PackageId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -43,10 +43,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\JapeCore\JapeCore\JapeCore.csproj" />
-		<ProjectReference Include="..\..\JapeCore\JapeDatabase\JapeDatabase.csproj" />
-		<ProjectReference Include="..\..\JapeCore\JapeHttp\JapeHttp.csproj" />
-		<ProjectReference Include="..\..\JapeCore\JapeService\JapeService.csproj" />
-		<ProjectReference Include="..\..\JapeCore\JapeWeb\JapeWeb.csproj" />
+		<ProjectReference Include="..\JapeCore\JapeCore\JapeCore.csproj" />
+		<ProjectReference Include="..\JapeCore\JapeDatabase\JapeDatabase.csproj" />
+		<ProjectReference Include="..\JapeCore\JapeHttp\JapeHttp.csproj" />
+		<ProjectReference Include="..\JapeCore\JapeService\JapeService.csproj" />
+		<ProjectReference Include="..\JapeCore\JapeWeb\JapeWeb.csproj" />
 	</ItemGroup>
 </Project>

@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Threading.Tasks;
 using JapeCore;
 using JapeService;
 
-namespace JonathanPaugh
+namespace Web
 {
     internal class Program : ConsoleProgram
     {

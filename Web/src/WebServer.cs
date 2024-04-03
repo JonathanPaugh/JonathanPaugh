@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using JapeHttp;
 using JapeService;
@@ -7,14 +6,19 @@ using JapeWeb;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
-namespace JonathanPaugh
+namespace Web
 {
     public class WebServer : JapeWeb.WebServer
     {
         private Templater templates;
 
+        #if DEBUG
+        private const bool DEBUG = true;
+        #else
         private const bool DEBUG = false;
-
+        #endif
+        
+        
         #if DEBUG
         protected override bool Caching => false;
         #endif

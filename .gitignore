@@ -1,12 +1,8 @@
-.editorconfig
-.idea
-
 *.DotSettings
 *.DotSettings.user
 
 **/.vs/
+**/.idea/
 **/obj/
 **/bin/
 **/build/
-src/.sync
-src/public/video
