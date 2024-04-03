@@ -1,2 +1,2 @@
-Web/public/img/** filter=lfs diff=lfs merge=lfs -text
-Web/public/video/** filter=lfs diff=lfs merge=lfs -text
+WebServer/public/img/** filter=lfs diff=lfs merge=lfs -text
+WebServer/public/video/** filter=lfs diff=lfs merge=lfs -text
