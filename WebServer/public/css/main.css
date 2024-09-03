@@ -405,6 +405,7 @@ nav > * {
 .splash-container {
   position: absolute;
   z-index: -1;
+  background-color: var(--color-background);
 }
 
 .splash {
